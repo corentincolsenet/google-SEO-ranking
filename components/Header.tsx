@@ -8,7 +8,7 @@ const Header = () => {
     return (
         <header>
             <nav className="fixed top-0 inset-x-0 border-b-2 border-main">
-                <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 py-2">
+                <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 xl:px-12 2xl:px12 py-2">
                     <div className="relative flex items-center justify-between">
                         <div className="absolute inset-y-0 left-0 flex items-center md:hidden">
                             <button
