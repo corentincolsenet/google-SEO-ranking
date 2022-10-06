@@ -1,6 +1,8 @@
 import type { NextPage } from 'next'
 import { NextSeo } from 'next-seo'
 
+import Layout from '../components/Layout'
+
 const Home: NextPage = () => {
   return (
     <>
@@ -10,9 +12,11 @@ const Home: NextPage = () => {
       Get your best Xeozrodel food from neighbour restaurants right to your door. 
       Recommended at 97% by xeozrodadvisor and reviewed at 5/5 by 'xeozrodel fork', the prestigious newspaper."
     />
-    <div className="flex h-screen items-center justify-center">
-      <h1>Let&apos;s win this competition 😎 🎉</h1>
-    </div>
+    <Layout>
+      <div className="flex h-screen items-center justify-center">
+        <h1>Let&apos;s win this competition 😎 🎉</h1>
+      </div>
+    </Layout>
     </>
   )
 }
