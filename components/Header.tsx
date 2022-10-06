@@ -1,13 +1,16 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 const Header = () => {
+    const router = useRouter()
     const [openMobileMenu, setOpenMobileMenu] = useState(false)
     const handleMobileMenu = () => setOpenMobileMenu(!openMobileMenu)
 
     return (
         <header>
-            <nav className="fixed top-0 inset-x-0 border-b-2 border-main">
+            <nav className="fixed top-0 inset-x-0 bg-white border-b-2 border-main z-50">
                 <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 py-2">
                     <div className="relative flex items-center justify-between">
                         <div className="absolute inset-y-0 left-0 flex items-center md:hidden">
@@ -32,30 +35,34 @@ const Header = () => {
                         </div>
                         <div className="flex flex-1 items-center justify-center md:items-stretch md:justify-between">
                             <div className="flex flex-shrink-0 items-center">
-                                <div className='relative hidden h-12 w-52 lg:block'>
-                                    <Image 
-                                        src="/images/logo-xeofood-full.svg"
-                                        layout="fill"
-                                        loading="lazy"
-                                        alt="xeofood logo full"
-                                    />
-                                </div>
-                                <div className='relative block h-12 w-12 lg:hidden'>
-                                    <Image 
-                                        src="/images/logo-xeofood-small.svg"
-                                        layout="fill"
-                                        loading="lazy"
-                                        alt="xeofood logo small"
-                                    />
-                                </div>
+                                <Link href="/">
+                                    <a className="relative hidden h-12 w-52 lg:block">
+                                        <Image 
+                                            src="/images/logo-xeofood-full.svg"
+                                            layout="fill"
+                                            loading="lazy"
+                                            alt="xeofood logo full"
+                                        />
+                                    </a>
+                                </Link>
+                                <Link href="/">
+                                    <a className="relative block h-12 w-12 lg:hidden">
+                                        <Image 
+                                            src="/images/logo-xeofood-small.svg"
+                                            layout="fill"
+                                            loading="lazy"
+                                            alt="xeofood logo small"
+                                        />
+                                    </a>
+                                </Link>
                             </div>
                             <div className="hidden sm:ml-6 md:flex flex-col justify-center">
                                 <div className="flex space-x-4">
-                                    <a href="#" className="hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About us</a>
-                                    <a href="#" className="hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Our work in Xeozrodel</a>
-                                    <a href="#" className="hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Reviews</a>
-                                    <a href="#" className="hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Blog</a>
-                                    <a href="#" className="hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                                    <Link href="/"><a className={`${router.pathname === "/aboutus" && "bg-gray-900 text-white"} hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium`}>About us</a></Link>
+                                    <Link href="/"><a className={`${router.pathname === "/ourworkinxeozrodel" && "bg-gray-900 text-white"} hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium`}>Our work in Xeozrodel</a></Link>
+                                    <Link href="/"><a className={`${router.pathname === "/reviews" && "bg-gray-900 text-white"} hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium`}>Reviews</a></Link>
+                                    <Link href="/blog"><a className={`${router.pathname === "/blog" && "bg-gray-900 text-white"} hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium`}>Blog</a></Link>
+                                    <Link href="/"><a className={`${router.pathname === "/contact" && "bg-gray-900 text-white"} hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium`}>Contact</a></Link>
                                 </div>
                             </div>
                         </div>
@@ -65,11 +72,11 @@ const Header = () => {
                 {openMobileMenu &&
                     <div className="md:hidden">
                         <div className="flex flex-col space-y-1 px-2 pt-2 pb-3">
-                            <a href="#" className="hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About us</a>
-                            <a href="#" className="hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Our work in Xeozrodel</a>
-                            <a href="#" className="hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Reviews</a>
-                            <a href="#" className="hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Blog</a>
-                            <a href="#" className="hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                            <Link href="/"><a className={`${router.pathname === "/aboutus" && "bg-gray-900 text-white"} hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium`}>About us</a></Link>
+                            <Link href="/"><a className={`${router.pathname === "/ourworkinxeozrodel" && "bg-gray-900 text-white"} hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium`}>Our work in Xeozrodel</a></Link>
+                            <Link href="/"><a className={`${router.pathname === "/reviews" && "bg-gray-900 text-white"} hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium`}>Reviews</a></Link>
+                            <Link href="/blog"><a className={`${router.pathname === "/blog" && "bg-gray-900 text-white"} hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium`}>Blog</a></Link>
+                            <Link href="/"><a className={`${router.pathname === "/contact" && "bg-gray-900 text-white"} hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium`}>Contact</a></Link>
                         </div>
                     </div>
                 }
