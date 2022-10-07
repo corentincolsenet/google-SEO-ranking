@@ -24,7 +24,7 @@ const Blog = ({ posts }: Props) => {
                             <h1 className="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl">From the Xeofood blog</h1>
 
                             <p className="max-w-lg mx-auto mt-4 text-gray-500">
-                                All the information about Xeofood and Xeozrodel to see on our different posts we made for you
+                                All the information about Xeofood and Xeozrodel to see on our different articles we made for you
                             </p>
                         </div>
                         <div className="flex flex-wrap items-center justify-center gap-8 mt-8 md:mt-16">
@@ -51,18 +51,18 @@ const Blog = ({ posts }: Props) => {
                                         </div>
                                     </div>
 
-                                    <h1 className="mt-6 text-xl font-semibold text-gray-800">
+                                    <h1 className="mt-6 text-xl md:text-2xl font-semibold text-gray-800">
                                         {post.title}
                                     </h1>
 
                                     <hr className="w-32 my-6 text-blue-500" />
 
-                                    <p className="text-sm text-gray-500">
+                                    <p className="text-md text-gray-500">
                                         {post.description}
                                     </p>
 
                                     <Link href={`/blog/${post.slug.current}`}>
-                                        <a className="inline-block mt-4 text-secondary underline hover:text-tertiary">Read more</a>
+                                        <a className="text-md inline-block mt-4 text-secondary underline hover:text-tertiary">Read more</a>
                                     </Link>
                                 </div>
                             ))}
