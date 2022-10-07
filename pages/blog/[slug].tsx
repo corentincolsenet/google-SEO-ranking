@@ -51,16 +51,23 @@ const Post = ({ post }: Props) => {
                         </div>
                     </div>
 
-                    <div className="mt-12 text-gray-700 text-lg leading-relaxed">
+                    <div className="mt-12 leading-relaxed">
                         <PortableText
                             dataset={process.env.NEXT_PUBLIC_SANITY_DATASET}
                             projectId={process.env.NEXT_PUBLIC_SANITY_PROJECT_ID}
                             content={post.body}
+                            serializers={{
+                                h1: (props: any) => <h1 className="text-2xl font-bold my-6 text-gray-900" {...props} />,
+                                h2: (props: any) => <h2 className="text-2xl font-bold my-6 text-gray-900" {...props} />,
+                                normal: (props: any) => <p className="text-md font-medium text-justify text-gray-700" {...props} />,
+                                li: ({ children }: any) => <li className="ml-4 list-disc font-medium">{children}</li>,
+                                link: ({ href, children }: any) => <a href={href} className="text-secondary hover:underline">{children}</a>,
+                            }}
                         />
                     </div>
 
                     <Link href="/blog">
-                        <a className="inline-block mt-12 text-secondary underline hover:text-tertiary">See other posts</a>
+                        <a className="inline-block mt-12 text-secondary underline hover:text-tertiary">See other articles</a>
                     </Link>
 
                 </article>
