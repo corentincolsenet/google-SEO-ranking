@@ -33,13 +33,13 @@ const Footer = () => {
                   <span className="block uppercase text-slate-500 text-sm font-semibold mb-2">Useful Links</span>
                   <ul className="list-unstyled">
                     <li>
-                      <Link href="/"><a className="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm">About Us</a></Link>
+                      <Link href="/"><a className="text-slate-600 hover:text-slate-800 font-semibold block py-1 text-sm">About Us</a></Link>
                     </li>
                     <li>
-                      <Link href="/"><a className="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm">Reviews</a></Link>
+                      <Link href="/"><a className="text-slate-600 hover:text-slate-800 font-semibold block py-1 text-sm">Reviews</a></Link>
                     </li>
                     <li>
-                      <Link href="/blog"><a className="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm">Blog</a></Link>
+                      <Link href="/blog"><a className="text-slate-600 hover:text-slate-800 font-semibold block py-1 text-sm">Blog</a></Link>
                     </li>
                   </ul>
                 </div>
@@ -47,19 +47,19 @@ const Footer = () => {
                   <span className="block uppercase text-slate-500 text-sm font-semibold mb-2">Other Resources</span>
                   <ul className="list-unstyled">
                     <li>
-                      <Link href="/"><a className="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm">License</a></Link>
+                      <Link href="/"><a className="text-slate-600 hover:text-slate-800 font-semibold block py-1 text-sm">License</a></Link>
                     </li>
                     <li>
-                      <a className="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm" href="#">Terms &amp; Conditions</a>
+                      <a className="text-slate-600 hover:text-slate-800 font-semibold block py-1 text-sm" href="#">Terms &amp; Conditions</a>
                     </li>
                     <li>
-                      <a className="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm" href="#">Privacy Policy</a>
+                      <a className="text-slate-600 hover:text-slate-800 font-semibold block py-1 text-sm" href="#">Privacy Policy</a>
                     </li>
                     <li>
-                      <Link href="/"><a className="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm">Contact Us</a></Link>
+                      <Link href="/"><a className="text-slate-600 hover:text-slate-800 font-semibold block py-1 text-sm">Contact Us</a></Link>
                     </li>
                     <li>
-                      <a className="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm" href="https://github.com/corentincolsenet/google-SEO-ranking">Github</a>
+                      <a className="text-slate-600 hover:text-slate-800 font-semibold block py-1 text-sm" href="https://github.com/corentincolsenet/google-SEO-ranking">Github</a>
                     </li>
                   </ul>
                 </div>
