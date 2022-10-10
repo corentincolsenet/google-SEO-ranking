@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Header from './Header'
+import Footer from './Footer'
 
 const Layout = ({ children }: any) => {
     return (
@@ -11,7 +12,7 @@ const Layout = ({ children }: any) => {
                 {children}
             </main>
 
-            {/* put footer component here */}
+            <Footer />
         </>
     )
 }
