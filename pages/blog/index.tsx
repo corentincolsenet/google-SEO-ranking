@@ -1,6 +1,7 @@
 import type { GetServerSideProps } from 'next'
 import { NextSeo } from 'next-seo'
-import Link from 'next/link'
+import { useRouter } from 'next/router'
+import moment from "moment"
 
 import { sanityClient, urlFor } from "../../sanity"
 import { Post } from '../../typings'
@@ -11,6 +12,8 @@ interface Props {
 }
 
 const Blog = ({ posts }: Props) => {
+    const router = useRouter()
+
     return (
         <>
             <NextSeo
@@ -28,44 +31,48 @@ const Blog = ({ posts }: Props) => {
                             </p>
                         </div>
                         <div className="flex flex-wrap items-center justify-center gap-8 mt-8 md:mt-16">
-                            {posts.map((post) => (
-                                <div key={post._id} className="group w-96">
-                                    <div className="relative group-hover:scale-95 transition-transform duration ease-in-out">
-                                        <img 
-                                            className="object-cover object-center w-full h-64 rounded-lg"
-                                            src={urlFor(post.mainImage).url()!}
-                                            loading="lazy"
-                                            alt=""
-                                        />
-                                        <div className="absolute bottom-0 flex p-3 bg-white">
+                            {posts.map((post) => {
+                                const createdPostDate = moment(post._createdAt).format('dddd MMMM D Y')
+                                return (
+                                    <div
+                                        key={post._id}
+                                        className="group w-96 cursor-pointer"
+                                        onClick={() => router.push(`/blog/${post.slug.current}`)}
+                                    >
+                                        <div className="relative group-hover:scale-105 transition-transform duration ease-in-out">
                                             <img 
-                                                className="relative object-cover object-center w-10 h-10 rounded-full"
-                                                src={urlFor(post.author.image).url()!}
+                                                className="object-cover object-center w-full h-64 rounded-lg"
+                                                src={urlFor(post.mainImage).url()!}
                                                 loading="lazy"
-                                                alt={post.author.name}
+                                                alt=""
                                             />
-                                            <div className="mx-4">
-                                                <h1 className="text-sm text-gray-700">{post.author.name}</h1>
-                                                <p className="text-sm text-gray-500">{post.author.description}</p>
+                                            <div className="absolute bottom-0 flex p-3 bg-white">
+                                                <img 
+                                                    className="relative object-cover object-center w-10 h-10 rounded-full"
+                                                    src={urlFor(post.author.image).url()!}
+                                                    loading="lazy"
+                                                    alt={post.author.name}
+                                                />
+                                                <div className="mx-4">
+                                                    <h1 className="text-sm text-gray-700">{post.author.name}</h1>
+                                                    <p className="text-sm text-gray-500">{post.author.description}</p>
+                                                    <p className="text-xs text-gray-400">{createdPostDate}</p>
+                                                </div>
                                             </div>
                                         </div>
+
+                                        <h1 className="mt-6 text-xl md:text-2xl font-semibold text-gray-800">
+                                            {post.title}
+                                        </h1>
+
+                                        <hr className="w-32 my-6 text-blue-500" />
+
+                                        <p className="text-md text-gray-500">
+                                            {post.description}
+                                        </p>
                                     </div>
-
-                                    <h1 className="mt-6 text-xl md:text-2xl font-semibold text-gray-800">
-                                        {post.title}
-                                    </h1>
-
-                                    <hr className="w-32 my-6 text-blue-500" />
-
-                                    <p className="text-md text-gray-500">
-                                        {post.description}
-                                    </p>
-
-                                    <Link href={`/blog/${post.slug.current}`}>
-                                        <a className="text-md inline-block mt-4 text-secondary underline hover:text-tertiary">Read more</a>
-                                    </Link>
-                                </div>
-                            ))}
+                                )
+                            })}
                         </div>
                     </div>
                 </section>
@@ -82,6 +89,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
             _id,
             title,
             slug,
+            _createdAt,
             author -> {
                 name,
                 description,
