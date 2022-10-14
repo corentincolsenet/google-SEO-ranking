@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import { NextSeo } from 'next-seo'
+import Homepage from './homepage'
 
 import Layout from '../components/Layout'
 
@@ -13,9 +14,7 @@ const Home: NextPage = () => {
       Recommended at 97% by xeozrodadvisor and reviewed at 5/5 by 'xeozrodel fork', the prestigious newspaper."
     />
     <Layout>
-      <div className="flex h-screen items-center justify-center">
-        <h1>Let&apos;s win this competition 😎 🎉</h1>
-      </div>
+        <Homepage/>
     </Layout>
     </>
   )
