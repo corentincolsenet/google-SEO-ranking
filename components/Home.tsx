@@ -2,7 +2,7 @@ import Svg from './svg';
 
 export default function Homepage() {
     const properties: React.CSSProperties = {
-        backgroundImage: `url("/images/back.jpg")`
+        backgroundImage: `url("/images/back.webp")`
     }
 
     return (
