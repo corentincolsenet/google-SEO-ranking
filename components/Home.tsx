@@ -8,9 +8,9 @@ export default function Homepage() {
     return (
         <main className='flex flex-col justify-center'>
             <section className='w-full'>
-                <div className='p-8 w-full flex flex-wrap items-center justify-center'>
+                <div className='px-8 py-12 md:py-20 w-full flex flex-wrap items-center justify-center'>
                     <div className='whitespace-pre-wrap max-w-md'>
-                        <h2 className='text-4xl font-bold leading-relaxed break-words'>Grab your <span className='text-tertiary'>FOOD</span> anywhere at anytime !</h2>
+                        <h2 className='text-4xl font-bold md:leading-relaxed break-words'>Grab your <span className='text-tertiary'>FOOD</span> anywhere at anytime in Xeozrodel !</h2>
                         <p className="visible mx-0 mt-2 mb-0 text-sm leading-relaxed text-left text-secondary">
                             Food from your favorite restaurants, delivered to your door
                         </p>
@@ -28,7 +28,7 @@ export default function Homepage() {
                 <p className='text-white justify-center text-lg font-medium'>XeoFood is available across the whole country ! We garuantee your delivery within 15 minutes.</p>
             </section>
 
-            <section className='space-y-8 p-20'>
+            <section className='space-y-8 py-20 px-8 max-w-6xl mx-auto'>
                 <h1 className="text-4xl text-center my-20">Tempor sit labore nostrud</h1>
                 <p className='text-justify'>
                     Exercitation non Lorem exercitation tempor amet ad esse velit. Anim
