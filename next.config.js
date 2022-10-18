@@ -4,7 +4,15 @@ const nextConfig = {
   swcMinify: true,
   images: {
 		domains: ['cdn.sanity.io']
-	}
+	},
+  async rewrites() {
+    return [
+      {
+        source: '/sitemap.xml',
+        destination: '/api/sitemap',
+      },
+    ]
+  }
 }
 
 module.exports = nextConfig
