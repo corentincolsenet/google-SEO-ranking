@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import { NextSeo } from 'next-seo'
-import Homepage from './homepage'
+import Homepage from '../components/Home'
 
 import Layout from '../components/Layout'
 

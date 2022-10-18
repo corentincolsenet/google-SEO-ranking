@@ -1,4 +1,4 @@
-import Svg from '../components/svg';
+import Svg from './svg';
 
 export default function Homepage() {
     const properties: React.CSSProperties = {
