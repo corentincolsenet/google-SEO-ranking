@@ -58,7 +58,7 @@ const Header = () => {
                             </div>
                             <div className="hidden sm:ml-6 md:flex flex-col justify-center">
                                 <div className="flex space-x-4">
-                                    <Link href="/"><a className={`${router.pathname === "/aboutus" && "bg-secondary text-white"} hover:bg-tertiary hover:text-white px-3 py-2 rounded-md text-sm font-medium`}>About us</a></Link>
+                                    <Link href="/about_us"><a className={`${router.pathname === "/aboutus" && "bg-secondary text-white"} hover:bg-tertiary hover:text-white px-3 py-2 rounded-md text-sm font-medium`}>About us</a></Link>
                                     <Link href="/"><a className={`${router.pathname === "/ourworkinxeozrodel" && "bg-secondary text-white"} hover:bg-tertiary hover:text-white px-3 py-2 rounded-md text-sm font-medium`}>Our work in Xeozrodel</a></Link>
                                     <Link href="/"><a className={`${router.pathname === "/reviews" && "bg-secondary text-white"} hover:bg-tertiary hover:text-white px-3 py-2 rounded-md text-sm font-medium`}>Reviews</a></Link>
                                     <Link href="/blog"><a className={`${router.pathname === "/blog" && "bg-secondary text-white"} hover:bg-tertiary hover:text-white px-3 py-2 rounded-md text-sm font-medium`}>Blog</a></Link>
