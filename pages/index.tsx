@@ -16,7 +16,7 @@ const Home: NextPage = () => {
         {...SEO}
       />
       <Layout>
-          <Homepage/>
+        <Homepage />
       </Layout>
     </>
   )

@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 export default function Homepage() {
   const properties: React.CSSProperties = {
     backgroundImage: `url("/images/home-bg.webp")`
@@ -39,13 +37,13 @@ export default function Homepage() {
                 </p>
               </div>
               <div className="md:h-5/12 lg:w-5/12">
-                <img className='rounded-3xl' src="/images/home-broomstick.png" alt="wizzard on a broomstick delivering food in xeozrodel" loading="lazy" width="" height=""/>
+                <img className='rounded-3xl' src="/images/home-broomstick.png" alt="wizzard on a broomstick delivering food in xeozrodel" loading="lazy" width="" height="" />
               </div>
             </div>
           </div>
           <h2 className='text-lg text-center py-4 mt-8'>
             Hale be thou and occasionally visit your local herald.
-            <br/>
+            <br />
             Our mystical food teleportation will soon be ready to deliver thy food even faster !
           </h2>
         </div>
