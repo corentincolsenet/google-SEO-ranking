@@ -33,7 +33,7 @@ const Footer = () => {
                   <span className="block uppercase text-slate-500 text-sm font-semibold mb-2">Useful Links</span>
                   <ul className="list-unstyled">
                     <li>
-                      <Link href="/about_us"><a className="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm">About Us</a></Link>
+                      <Link href="/about"><a className="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm">About Us</a></Link>
                     </li>
                     <li>
                       <Link href="/"><a className="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm">Reviews</a></Link>
