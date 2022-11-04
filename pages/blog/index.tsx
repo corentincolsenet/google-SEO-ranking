@@ -17,7 +17,7 @@ const Blog = ({ posts }: Props) => {
     return (
         <>
             <NextSeo
-                title="Xeofood blog | All informations about Xeofood and Xeozrodel"
+                title="Xeofood blog | Informations about Xeofood and Xeozrodel"
                 description="All available articles to learn more about what Xeofood is and the world of Xeozrodel. Check this out!"
             />
             <Layout>
