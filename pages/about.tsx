@@ -41,7 +41,7 @@ const About_us: NextPage = () => {
                         <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
                             <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
                                 <div className="md:h-5/12 lg:w-5/12">
-                                    <img className="rounded-xl" src="/images/sushis.webp" alt="food image" loading="lazy" width="" height=""/>
+                                    <img className="rounded-xl" src="/images/sushis.webp" alt="food image" loading="lazy" width="" height="" />
                                 </div>
                                 <div className="md:h-7/12 lg:w-6/12">
                                     <h2 className="text-2xl text-gray-900 font-bold md:text-4xl">Xeofood aim to provide the best food to your home</h2>
