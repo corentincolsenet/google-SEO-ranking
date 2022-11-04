@@ -59,7 +59,7 @@ const Header = () => {
                             <div className="hidden sm:ml-6 md:flex flex-col justify-center">
                                 <div className="flex space-x-4">
                                     <Link href="/about"><a className={`${router.pathname === "/about" && "bg-secondary text-white"} hover:bg-tertiary hover:text-white px-3 py-2 rounded-md text-sm font-medium`}>About us</a></Link>
-                                    <Link href="/services"><a className={`${router.pathname === "/ourworkinxeozrodel" && "bg-secondary text-white"} hover:bg-tertiary hover:text-white px-3 py-2 rounded-md text-sm font-medium`}>Our work in Xeozrodel</a></Link>
+                                    <Link href="/services"><a className={`${router.pathname === "/services" && "bg-secondary text-white"} hover:bg-tertiary hover:text-white px-3 py-2 rounded-md text-sm font-medium`}>Our work in Xeozrodel</a></Link>
                                     <Link href="/"><a className={`${router.pathname === "/reviews" && "bg-secondary text-white"} hover:bg-tertiary hover:text-white px-3 py-2 rounded-md text-sm font-medium`}>Reviews</a></Link>
                                     <Link href="/blog"><a className={`${router.pathname === "/blog" && "bg-secondary text-white"} hover:bg-tertiary hover:text-white px-3 py-2 rounded-md text-sm font-medium`}>Blog</a></Link>
                                     <Link href="/"><a className={`${router.pathname === "/contact" && "bg-secondary text-white"} hover:bg-tertiary hover:text-white px-3 py-2 rounded-md text-sm font-medium`}>Contact</a></Link>
@@ -73,7 +73,7 @@ const Header = () => {
                     <div className="md:hidden">
                         <div className="flex flex-col space-y-1 px-2 pt-2 pb-3">
                             <Link href="/about"><a className={`${router.pathname === "/about" && "bg-secondary text-white"} hover:bg-tertiary hover:text-white block px-3 py-2 rounded-md text-base font-medium`}>About us</a></Link>
-                            <Link href="/services"><a className={`${router.pathname === "/ourworkinxeozrodel" && "bg-secondary text-white"} hover:bg-tertiary hover:text-white block px-3 py-2 rounded-md text-base font-medium`}>Our work in Xeozrodel</a></Link>
+                            <Link href="/services"><a className={`${router.pathname === "/services" && "bg-secondary text-white"} hover:bg-tertiary hover:text-white block px-3 py-2 rounded-md text-base font-medium`}>Our work in Xeozrodel</a></Link>
                             <Link href="/"><a className={`${router.pathname === "/reviews" && "bg-secondary text-white"} hover:bg-tertiary hover:text-white block px-3 py-2 rounded-md text-base font-medium`}>Reviews</a></Link>
                             <Link href="/blog"><a className={`${router.pathname === "/blog" && "bg-secondary text-white"} hover:bg-tertiary hover:text-white block px-3 py-2 rounded-md text-base font-medium`}>Blog</a></Link>
                             <Link href="/"><a className={`${router.pathname === "/contact" && "bg-secondary text-white"} hover:bg-tertiary hover:text-white block px-3 py-2 rounded-md text-base font-medium`}>Contact</a></Link>

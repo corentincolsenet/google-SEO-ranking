@@ -1,4 +1,4 @@
-export interface Post {
+export interface IPost {
     _id: string;
     _createdAt: string;
     title: string;
@@ -17,4 +17,10 @@ export interface Post {
         current: string;
     };
     body: [object];
+}
+
+export interface ITeamMember {
+    fullName: string;
+    position: string;
+    url: string;
 }
