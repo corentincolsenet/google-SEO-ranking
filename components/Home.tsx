@@ -6,8 +6,8 @@ export default function Homepage() {
     }
 
     return (
-        <main className='flex flex-col justify-center'>
-            <section className='w-full'>
+        <>
+            <section className='flex flex-col justify-center w-full'>
                 <div className='px-8 py-12 md:py-20 w-full flex flex-wrap items-center justify-center'>
                     <div className='whitespace-pre-wrap max-w-md'>
                         <h2 className='text-4xl font-bold md:leading-relaxed break-words'>Grab your <span className='text-tertiary'>FOOD</span> anywhere at anytime in Xeozrodel !</h2>
@@ -56,6 +56,6 @@ export default function Homepage() {
                     enim esse.
                 </p>
             </section>
-        </main>
+        </>
     )
 }
