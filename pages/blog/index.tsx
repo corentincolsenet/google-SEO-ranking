@@ -22,9 +22,9 @@ const Blog = ({ posts }: Props) => {
             />
             <Layout>
                 <section className="bg-white">
-                    <div className="container px-6 py-10 lg:py-20 mx-auto">
+                    <div className="container px-6 py-24 mx-auto">
                         <div className="text-center">
-                            <h1 className="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl">From the <span className="text-secondary">Xeofood</span> blog</h1>
+                            <h1 className="text-3xl text-center font-semibold text-gray-800 capitalize xl:text-5xl lg:text-4xl">From the <span className="text-secondary">Xeofood</span> blog</h1>
 
                             <p className="max-w-lg mx-auto mt-4 text-gray-500">
                                 All the information about <span className="text-secondary">Xeofood</span> and <span className="text-secondary">Xeozrodel</span> to see on our different articles we made for you

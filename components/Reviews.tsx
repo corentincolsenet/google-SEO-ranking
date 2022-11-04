@@ -34,9 +34,9 @@ const Reviews = () => {
     return (
         <section className="text-gray-600 body-font">
             <div className="container px-5 py-24 mx-auto">
-                <h2 className="mb-20 text-3xl text-center font-semibold text-gray-800 capitalize xl:text-5xl lg:text-4xl">
+                <h1 className="mb-20 text-3xl text-center font-semibold text-gray-800 capitalize xl:text-5xl lg:text-4xl">
                     What our <span className="text-secondary">clients</span> are saying
-                </h2>
+                </h1>
                 <div className="flex flex-wrap -m-4 justify-center items-start md:gap-y-10">
                     {reviews.map((review: IReview, index: number) => (
                         <div key={`review-${index}`} className="lg:w-1/3 lg:mb-0 mb-6 p-4">

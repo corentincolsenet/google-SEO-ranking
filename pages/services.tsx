@@ -13,10 +13,10 @@ const Services: NextPage = () => {
                 within 10 minutes after your order"
             />
             <Layout>
-                <section className="body-font">
+                <section className="body-font px-5 py-24">
                     {/* Title */}
-                    <div className="flex justify-center items-center pt-8">
-                        <h2 className="text-4xl">How it&apos;s working ?</h2>
+                    <div className="flex justify-center items-center">
+                        <h1 className="text-3xl text-center font-semibold text-gray-800 capitalize xl:text-5xl lg:text-4xl">How it&apos;s <span className="text-secondary">working</span> ?</h1>
                     </div>
                     <div className="container px-5 py-24 mx-auto">
                         {/* First element */}
