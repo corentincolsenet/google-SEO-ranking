@@ -14,6 +14,10 @@ export default function handler(
     const baseUrl = "https://www.xeozrodel-food.com"
     const pagesUrl = [
         "",
+        "about",
+        "services",
+        "reviews",
+        "contact",
         "blog",
         "blog/xeofood-what-is-it",
         "blog/the-places-to-be-in-xeozrodel"
