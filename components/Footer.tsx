@@ -77,7 +77,6 @@ const Footer = () => {
                   <a href="https://www.linkedin.com/in/ghoslain-duvigneau-09b975168/" className="text-slate-500 hover:text-slate-800"> Ghoslain Duvigneau</a>,
                   <a href="https://www.linkedin.com/in/leohenneville/" className="text-slate-500 hover:text-slate-800"> Léo Henneville</a>.
                 </div>
-                
               </div>
             </div>
           </div>

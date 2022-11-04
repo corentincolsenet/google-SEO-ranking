@@ -51,7 +51,7 @@ const ContactPage: NextPage = () => {
                 />
             )}
             <Layout>
-                <section className="min-h-screen bg-cover " style={properties}>
+                <section className="min-h-screen bg-cover" style={properties}>
                     <div className="flex flex-col min-h-screen bg-black/60">
                         <div className="container flex flex-col flex-1 px-6 py-12 mx-auto">
                             <div className="flex-1 lg:flex lg:items-center lg:-mx-6">
