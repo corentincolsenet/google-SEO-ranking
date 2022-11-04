@@ -36,7 +36,7 @@ const Footer = () => {
                       <Link href="/about"><a className="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm">About</a></Link>
                     </li>
                     <li>
-                      <Link href="/"><a className="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm">Reviews</a></Link>
+                      <Link href="/reviews"><a className="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm">Reviews</a></Link>
                     </li>
                     <li>
                       <Link href="/blog"><a className="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm">Blog</a></Link>

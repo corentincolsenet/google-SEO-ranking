@@ -8,7 +8,7 @@ const About_us: NextPage = () => {
         backgroundImage: `url("/images/about.webp")`
     }
 
-    const teamMembers: Array<{ fullName: string, position: string, url: string }> = [
+    const teamMembers: Array<ITeamMember> = [
         {
             fullName: "Ghoslain Duvigneau",
             position: "Cofounder & CEO",
