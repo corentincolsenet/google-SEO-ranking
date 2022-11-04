@@ -24,7 +24,7 @@ const Services: NextPage = () => {
             <section className="body-font">
                 {/* Title */}
                 <div className="flex justify-center items-center pt-8">
-                    <h2 className="text-4xl">How it's working ?</h2>
+                    <h2 className="text-4xl">How it&apos;s working ?</h2>
                 </div>
                 <div className="container px-5 py-24 mx-auto">
                     {/* First element */}

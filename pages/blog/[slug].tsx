@@ -6,11 +6,11 @@ import PortableText from "react-portable-text"
 import moment from "moment"
 
 import { sanityClient, urlFor } from "../../sanity"
-import { Post } from '../../typings'
+import { IPost } from '../../typings'
 import Layout from '../../components/Layout'
 
 interface Props {
-    post: Post;
+    post: IPost;
 }
 
 const Post = ({ post }: Props) => {
@@ -90,7 +90,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
     const posts = await sanityClient.fetch(query)
 
-    const paths = posts.map((post: Post) => ({
+    const paths = posts.map((post: IPost) => ({
         params: {
             slug: post.slug.current
         }
