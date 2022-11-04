@@ -4,11 +4,11 @@ import { useRouter } from 'next/router'
 import moment from "moment"
 
 import { sanityClient, urlFor } from "../../sanity"
-import { Post } from '../../typings'
+import { IPost } from '../../typings'
 import Layout from '../../components/Layout'
 
 interface Props {
-    posts: [Post];
+    posts: [IPost];
 }
 
 const Blog = ({ posts }: Props) => {
