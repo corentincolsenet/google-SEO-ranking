@@ -35,7 +35,7 @@ export default function Homepage() {
                   Pioneers in xeozrodel magical research, we invested in food delivery on magical broomsticks. Allowing every xeozrodians to get their best civet from neighbor restaurants right to their doors.
                 </p>
                 <p className='text-left mt-4'>
-                  Recommended at 97% by xeozrodadvisor regarding food delivery and reviewed at 5/5 by "xeozrodel fork", the prestigious newspaper.
+                  Recommended at 97% by xeozrodadvisor regarding food delivery and reviewed at 5/5 by &quot;xeozrodel fork&quot;, the prestigious newspaper.
                 </p>
               </div>
               <div className="md:h-5/12 lg:w-5/12">
