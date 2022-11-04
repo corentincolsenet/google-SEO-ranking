@@ -56,7 +56,7 @@ const Footer = () => {
                       <a className="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm" href="#">Privacy Policy</a>
                     </li>
                     <li>
-                      <Link href="/"><a className="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm">Contact Us</a></Link>
+                      <Link href="/contact"><a className="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm">Contact</a></Link>
                     </li>
                     <li>
                       <a className="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm" href="https://github.com/corentincolsenet/google-SEO-ranking">Github</a>
