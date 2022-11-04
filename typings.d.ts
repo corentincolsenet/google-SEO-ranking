@@ -24,3 +24,10 @@ export interface ITeamMember {
     position: string;
     url: string;
 }
+
+export interface IReview {
+    fullName: string;
+    stars: 0 | 1 | 2 | 3 | 4 | 5;
+    url: string;
+    review: string;
+}

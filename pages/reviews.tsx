@@ -1,14 +1,10 @@
 import type { NextPage } from 'next';
 import { NextSeo } from 'next-seo';
 import Layout from '../components/Layout';
-import { ITeamMember } from '../typings';
+import Reviews from '../components/Reviews'; 
 
-const Reviews: NextPage = () => {
-    const properties: React.CSSProperties = {
-        backgroundImage: `url("/images/about.webp")`
-    }
-
-    const teamMembers: Array<{ fullName: string, position: string, url: string }> = [
+const ReviewsPage: NextPage = () => {
+    const reviews: Array<{ fullName: string, position: string, url: string }> = [
         {
             fullName: "Ghoslain Duvigneau",
             position: "Cofounder & CEO",
@@ -33,12 +29,10 @@ const Reviews: NextPage = () => {
                 description="The reviews from our customers in all Xeozrodel! Check this out!"
             />
             <Layout>
-                <section>
-                    
-                </section>
+                <Reviews />
             </Layout>
         </>
     )
 }
 
-export default Reviews;
+export default ReviewsPage;
