@@ -8,25 +8,25 @@ const Reviews = () => {
     {
       fullName: "Edgar Presleye",
       review: "Ghos ecrit la review ici",
-      url: "/images/edgar-presleye.png",
+      url: "/images/reviews-person-edgar-presleye.png",
       stars: 5
     },
     {
       fullName: "Zanna Woodrowe",
       review: "Ghos ecrit la review ici",
-      url: "/images/zanna-woodrowe.png",
+      url: "/images/reviews-person-zanna-woodrowe.png",
       stars: 5
     },
     {
       fullName: "Ainslee Radclyffee",
       review: "Ghos ecrit la review ici",
-      url: "/images/ainslee-radclyffee.png",
+      url: "/images/reviews-person-ainslee-radclyffee.png",
       stars: 5
     },
     {
       fullName: "Kelton Blackmane",
       review: "Ghos ecrit la review ici",
-      url: "/images/kelton-blackmane.png",
+      url: "/images/reviews-person-kelton-blackmane.png",
       stars: 5
     },
   ]
@@ -35,7 +35,7 @@ const Reviews = () => {
     <section className="text-gray-600 body-font">
       <div className="container px-5 py-24 mx-auto">
         <h2 className="mb-20 text-3xl text-center font-semibold text-gray-800 capitalize xl:text-5xl lg:text-4xl">
-          What our <span className="text-secondary">clients</span> are saying
+          What our <span className="text-secondary">customers</span> are saying
         </h2>
         <div className="flex flex-wrap -m-4 justify-center items-start md:gap-y-10">
           {reviews.map((review: IReview, index: number) => (
@@ -47,7 +47,7 @@ const Reviews = () => {
                     className='rounded-full'
                     layout='fill'
                     loading='lazy'
-                    alt={review.fullName}
+                    alt={"Picture of "+review.fullName}
                   />
                 </div>
                 <div className="flex items-center">

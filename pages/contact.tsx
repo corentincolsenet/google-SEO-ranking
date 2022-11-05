@@ -56,12 +56,10 @@ const ContactPage: NextPage = () => {
             <div className="container flex flex-col flex-1 px-6 py-12 mx-auto">
               <div className="flex-1 lg:flex lg:items-center lg:-mx-6">
                 <div className="text-white lg:w-1/2 lg:mx-6">
-                  <h1 className="text-3xl font-semibold capitalize lg:text-5xl">Ultimate design solution</h1>
+                  <h2 className="text-3xl font-semibold capitalize lg:text-5xl">Let us hear your voice</h2>
 
                   <p className="max-w-xl mt-6">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem quo
-                    aliquid molestiae hic incidunt beatae placeat accusantium! Alias ex quisquam ab tempora. Ratione
-                    autem doloremque ducimus numquam doloribus, error sed.
+                    WIP
                   </p>
 
                   <button className="px-8 py-3 mt-6 text-sm font-medium tracking-wide bg-secondary text-white capitalize transition-colors duration-300 transform rounded-md hover:bg-tertiary focus:outline-none">

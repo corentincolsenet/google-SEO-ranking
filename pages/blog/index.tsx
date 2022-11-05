@@ -54,7 +54,7 @@ const Blog = ({ posts }: Props) => {
                                                     alt={post.author.name}
                                                 />
                                                 <div className="mx-4">
-                                                    <h1 className="text-sm text-gray-700">{post.author.name}</h1>
+                                                    <h2 className="text-sm text-gray-700">{post.author.name}</h2>
                                                     <p className="text-sm text-gray-500">{post.author.description}</p>
                                                     <p className="text-xs text-gray-400">{createdPostDate}</p>
                                                 </div>
