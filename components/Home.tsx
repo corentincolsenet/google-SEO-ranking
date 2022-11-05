@@ -8,15 +8,15 @@ export default function Homepage() {
       <section className='flex flex-col justify-center w-full'>
         <div className='px-8 py-12 md:py-20 w-full flex flex-wrap items-center justify-center'>
           <div className='whitespace-pre-wrap max-w-xl'>
-            <h2 className='text-4xl text-center font-bold md:leading-relaxed break-words pb-3'>Get thy <span className='text-secondary'>FOOD</span> from everywhere in <span className='text-secondary'><strong>XEOZRODEL</strong></span></h2>
+            <h1 className='text-4xl text-center font-bold md:leading-relaxed break-words pb-3'>Get thy <span className='text-secondary'>FOOD</span> from everywhere in <span className='text-secondary'><strong>XEOZRODEL</strong></span></h1>
             <p className="text-center font-bold mx-0 mt-2 mb-0 leading-relaxed text-tertiary">
               Food from your favorite restaurants, delivered to your door
             </p>
           </div>
         </div>
       </section>
-      <section className="bg-fixed bg-center" style={properties}>
-        <div className="flex flex-col w-full h-[550px] bg-cover justify-center items-center bg-black/40">
+      <section className="bg-fixed bg-center bg-cover" style={properties}>
+        <div className="flex flex-col w-full h-[550px] justify-center items-center bg-black/40">
           <h2 className="text-white text-center text-3xl font-semibold mt-20 mb-10 mx-5">
             Looking for some pandemain ?
           </h2>
@@ -25,7 +25,7 @@ export default function Homepage() {
       </section>
       <section className='space-y-8 py-20 px-8 max-w-6xl mx-auto'>
         <div className="container mx-auto px-4">
-          <h1 className="text-3xl text-center font-semibold my-6 mb-10">We offer the best food delivery in all <span className='text-secondary'><strong>Xeozrodel</strong></span> !</h1>
+          <h2 className="text-3xl text-center font-semibold my-6 mb-10">We offer the best food delivery in all <span className='text-secondary'><strong>Xeozrodel</strong></span> !</h2>
           <div className="container bg-gray-100 m-auto px-6 py-8 text-gray-600 md:px-12 xl:px-6 rounded-xl">
             <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
               <div className="md:h-7/12 lg:w-6/12">
@@ -41,11 +41,11 @@ export default function Homepage() {
               </div>
             </div>
           </div>
-          <h2 className='text-lg text-center py-4 mt-8'>
+          <h3 className='text-lg text-center py-4 mt-8'>
             Hale be thou and occasionally visit your local herald.
             <br />
             Our mystical food teleportation will soon be ready to deliver thy food even faster !
-          </h2>
+          </h3>
         </div>
       </section>
     </>

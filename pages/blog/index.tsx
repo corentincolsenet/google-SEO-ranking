@@ -27,7 +27,7 @@ const Blog = ({ posts }: Props) => {
                             <h1 className="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl">From the <span className="text-secondary">Xeofood</span> blog</h1>
 
                             <p className="max-w-lg mx-auto mt-4 text-gray-500">
-                                All the information about <span className="text-secondary">Xeofood</span> and <span className="text-secondary">Xeozrodel</span> to see on our different articles we made for you
+                                Information about <span className="text-secondary">Xeofood</span> and <span className="text-secondary">Xeozrodel</span> to see on our different articles we made for you
                             </p>
                         </div>
                         <div className="flex flex-wrap items-center justify-center gap-8 mt-8 md:mt-16">
