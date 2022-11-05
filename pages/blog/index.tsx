@@ -30,7 +30,7 @@ const Blog = ({ posts }: Props) => {
                                 Information about <span className="text-secondary">Xeofood</span> and <span className="text-secondary">Xeozrodel</span> to see on our different articles we made for you
                             </p>
                         </div>
-                        <div className="flex flex-wrap items-center justify-center gap-8 mt-8 md:mt-16">
+                        <div className="flex flex-wrap items-start justify-center gap-8 mt-8 md:mt-16">
                             {posts.map((post) => {
                                 const createdPostDate = moment(post._createdAt).format('dddd MMMM D Y')
                                 return (

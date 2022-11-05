@@ -62,6 +62,7 @@ const Post = ({ post }: Props) => {
                                 normal: (props: any) => <p className="text-md font-medium text-justify text-gray-700" {...props} />,
                                 li: ({ children }: any) => <li className="ml-4 list-disc font-medium">{children}</li>,
                                 link: ({ href, children }: any) => <a href={href} className="text-secondary hover:underline">{children}</a>,
+                                img: (props: any) => <img className="w" loading='lazy' alt="" {...props} />,
                             }}
                         />
                     </div>
