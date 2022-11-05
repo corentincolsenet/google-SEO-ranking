@@ -26,9 +26,9 @@ const Blog = ({ posts }: Props) => {
                         <div className="text-center">
                             <h1 className="text-3xl text-center font-semibold text-gray-800 capitalize xl:text-5xl lg:text-4xl">From the <span className="text-secondary">Xeofood</span> blog</h1>
 
-                            <p className="max-w-lg mx-auto mt-4 text-gray-500">
-                                Information about <span className="text-secondary">Xeofood</span> and <span className="text-secondary">Xeozrodel</span> to see on our different articles we made for you
-                            </p>
+                            <h2 className="max-w-lg mx-auto mt-8 text-gray-500">
+                                Information about <span className="text-secondary"><strong>Xeozrodel</strong></span> and <span className="text-secondary"><strong>Xeofood</strong></span> on numerous articles written for you.
+                            </h2>
                         </div>
                         <div className="flex flex-wrap items-start justify-center gap-8 mt-8 md:mt-16">
                             {posts.map((post) => {

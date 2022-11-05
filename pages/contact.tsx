@@ -57,39 +57,29 @@ const ContactPage: NextPage = () => {
               <div className="flex-1 lg:flex lg:items-center lg:-mx-6">
                 <div className="text-white lg:w-1/2 lg:mx-6">
                   <h2 className="text-3xl font-semibold capitalize lg:text-5xl">Let us hear your voice</h2>
-
                   <p className="max-w-xl mt-6">
-                    WIP
+                    If you have any question to ask, any complain or whatsoever, feel free to contact us with this magic form. It&aposll write your message down with a magic ink nib and ou customer support will tie it to an owl messenger headed to our headquarters in Styford. 
                   </p>
-
-                  <button className="px-8 py-3 mt-6 text-sm font-medium tracking-wide bg-secondary text-white capitalize transition-colors duration-300 transform rounded-md hover:bg-tertiary focus:outline-none">
-                    Send
-                  </button>
                 </div>
 
                 <div className="mt-8 lg:w-1/2 lg:mx-6">
                   <div className="w-full px-8 py-10 mx-auto overflow-hidden backdrop-blur-md shadow-2xl border-[1px] rounded-xl lg:max-w-xl">
-                    <h1 className="text-2xl font-medium text-white">Contact form</h1>
-
-                    <p className="mt-4 text-white">
-                      Ask us everything and we would love
-                      to hear from you
-                    </p>
+                    <h1 className="text-2xl font-medium text-white">Magic Form</h1>
 
                     <form className="mt-6">
                       <div className="flex-1">
-                        <label htmlFor="fullName" className="block mb-2 text-sm text-white">Full Name</label>
-                        <input id="fullName" type="text" placeholder="John Doe" className="block w-full px-5 py-3 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md focus:outline-none" />
+                        <label htmlFor="fullName" className="block mb-2 text-sm text-white">Thy Name</label>
+                        <input id="fullName" type="text" placeholder="Auden Faircloughe" className="block w-full px-5 py-3 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md focus:outline-none" />
                       </div>
 
                       <div className="flex-1 mt-6">
-                        <label htmlFor="emailAddress" className="block mb-2 text-sm text-white">Email address</label>
-                        <input id="emailAddress" type="email" placeholder="johndoe@example.com" className="block w-full px-5 py-3 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md focus:outline-none" />
+                        <label htmlFor="cityName" className="block mb-2 text-sm text-white">Thy City</label>
+                        <input id="cityName" type="text" placeholder="Conno" className="block w-full px-5 py-3 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md focus:outline-none" />
                       </div>
 
                       <div className="w-full mt-6">
-                        <label htmlFor="message" className="block mb-2 text-sm text-white">Message</label>
-                        <textarea id="message" className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 focus:outline-none" placeholder="Message"></textarea>
+                        <label htmlFor="message" className="block mb-2 text-sm text-white">Thy Message</label>
+                        <textarea id="message" className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 focus:outline-none" placeholder="Write here"></textarea>
                       </div>
 
                     </form>
