@@ -118,9 +118,9 @@ const Services: NextPage = () => {
           </div>
         </section>
         <section className="body-font">
-          <div className="flex flex-col text-center w-full mb-20 py-16">
-            <h2 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Xeozrodel coverage</h2>
-            <div className="relative h-24 w-24 inline-flex items-center justify-center flex-shrink-0 bg-cover">
+          <div className="flex flex-col items-center w-full mb-20 py-16">
+            <h2 className="sm:text-3xl font-medium title-font mb-4 text-gray-900">Xeozrodel coverage</h2>
+            <div className="relative h-[300px] w-[400px] md:h-[500px] md:w-[900px] flex-shrink-0 bg-cover">
                 <Image
                   src="/images/services-coverage-xeozrodel-map.png"
                   layout="fill"
