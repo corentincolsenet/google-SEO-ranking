@@ -39,8 +39,8 @@ const ContactPage: NextPage = () => {
   return (
     <>
       <NextSeo
-        title="Xeofood | About page"
-        description="This page introduce who we are and what is the relation between us and Xeozrodel"
+        title="Xeofood | Contact"
+        description="You can reach us to this magical form avoiding a long trip in Xeozrodel"
       />
       {animation && (
         <div className='fixed inset-0' style={{ zIndex: 9999 }}>

@@ -29,7 +29,7 @@ const About_us: NextPage = () => {
   return (
     <>
       <NextSeo
-        title="Xeofood | About page"
+        title="Xeofood | About"
         description="This page introduce who we are and what is the relation between us and Xeozrodel"
       />
       <Layout>

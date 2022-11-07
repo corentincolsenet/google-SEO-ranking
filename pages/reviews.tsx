@@ -7,7 +7,7 @@ const ReviewsPage: NextPage = () => {
   return (
     <>
       <NextSeo
-        title="Xeofood | Reviews page"
+        title="Xeofood | Reviews"
         description="The reviews from our customers in all Xeozrodel ! Check them out !"
       />
       <Layout>
