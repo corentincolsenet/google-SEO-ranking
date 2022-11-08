@@ -30,7 +30,7 @@ const Services: NextPage = () => {
             <div className="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
               <div className="relative sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full flex-shrink-0 bg-cover">
                 <Image
-                  src="/images/services-bell-ring.png"
+                  src="/images/services-bell-ring.webp"
                   layout="fill"
                   className="rounded-full"
                   loading="lazy"
@@ -51,7 +51,7 @@ const Services: NextPage = () => {
               </div>
               <div className="relative sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full flex-shrink-0 bg-cover">
                 <Image
-                  src="/images/services-delivery.png"
+                  src="/images/services-delivery.webp"
                   layout="fill"
                   className="rounded-full"
                   loading="lazy"
@@ -63,7 +63,7 @@ const Services: NextPage = () => {
             <div className="flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col">
               <div className="relative sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full flex-shrink-0 bg-cover">
                 <Image
-                  src="/images/services-food-basket.png"
+                  src="/images/services-food-basket.webp"
                   layout="fill"
                   className="rounded-full"
                   loading="lazy"
@@ -122,7 +122,7 @@ const Services: NextPage = () => {
             <h2 className="sm:text-3xl font-medium title-font mb-4 text-gray-900">Xeozrodel coverage</h2>
             <div className="relative h-[300px] w-[400px] md:h-[500px] md:w-[900px] flex-shrink-0 bg-cover">
                 <Image
-                  src="/images/services-coverage-xeozrodel-map.png"
+                  src="/images/services-coverage-xeozrodel-map.webp"
                   layout="fill"
                   className="image"
                   loading="lazy"

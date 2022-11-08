@@ -2,27 +2,28 @@ import type { NextPage } from 'next';
 import { NextSeo } from 'next-seo';
 import Layout from '../components/Layout';
 import { ITeamMember } from '../typings';
+import Image from 'next/image';
 
 const About_us: NextPage = () => {
   const properties: React.CSSProperties = {
-    backgroundImage: `url("/images/about-xeofood.png")`
+    backgroundImage: `url("/images/about-xeofood.webp")`
   }
 
   const teamMembers: Array<ITeamMember> = [
     {
       fullName: "Ghoslain Duvigneau",
       position: "Cofounder & CEO",
-      url: "/images/about-team-ghoslain-duvigneau.jpeg",
+      url: "/images/about-team-ghoslain-duvigneau.webp",
     },
     {
       fullName: "Corentin Colsenet",
       position: "Cofounder & CTO",
-      url: "/images/about-team-corentin-colsenet.jpg",
+      url: "/images/about-team-corentin-colsenet.webp",
     },
     {
       fullName: "Léo Henneville",
       position: "Cofounder & COO",
-      url: "/images/about-team-leo-henneville.jpeg",
+      url: "/images/about-team-leo-henneville.webp",
     },
   ]
 
@@ -42,8 +43,15 @@ const About_us: NextPage = () => {
           <div className="py-16 bg-white">
             <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
               <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
-                <div className="md:h-5/12 lg:w-5/12">
-                  <img className="rounded-xl" src="/images/about-broomstick-plan.png" alt="wizzard broomstick blueprint to deliver food in xeozrodel" loading="lazy" width="" height="" />
+                <div className="relative md:h-5/12 lg:w-5/12">
+                  <Image
+                    className="rounded-xl"
+                    width={1024}
+                    height={1024}
+                    src="/images/about-broomstick-plan.webp"
+                    alt="wizzard broomstick blueprint to deliver food in xeozrodel"
+                    loading="lazy"
+                  />
                 </div>
                 <div className="md:h-7/12 lg:w-6/12">
                   <h2 className="text-2xl text-gray-900 font-bold md:text-4xl">Xeofood technology at thy service</h2>
@@ -61,8 +69,15 @@ const About_us: NextPage = () => {
                   <p className="mt-6 text-gray-600">The knowledge of the elves in the Abeth Forest near Laisy helped us building a magical bell, the Xeobell.</p>
                   <p className="mt-4 text-gray-600"> With thy bell you can ring any of our 15 000 workers all around Xeozrodel to take your order on any Xeozrodel restaurant or tavern and they will get it delivered to you within 15 minutes.</p>
                 </div>
-                <div className="md:h-5/12 lg:w-5/12">
-                  <img className="rounded-xl" src="/images/about-bell.png" alt="xeofood bell that you ring to pass thy order in xeozrodel" loading="lazy" width="" height="" />
+                <div className="relative md:h-5/12 lg:w-5/12">
+                  <Image
+                    className="rounded-xl"
+                    width={1024}
+                    height={1024}
+                    src="/images/about-bell.webp"
+                    alt="xeofood bell that you ring to pass thy order in xeozrodel"
+                    loading="lazy"
+                  />
                 </div>
               </div>
             </div>
@@ -70,8 +85,15 @@ const About_us: NextPage = () => {
           <div className="py-16 bg-gray-200">
             <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
               <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
-                <div className="md:h-5/12 lg:w-5/12">
-                  <img className='rounded-xl' src="/images/about-metal-basket.png" alt="metal worker creating the best xeozrodel metal basket for xeofood" loading="lazy" width="" height="" />
+                <div className="relative md:h-5/12 lg:w-5/12">
+                  <Image
+                    className="rounded-xl"
+                    width={1024}
+                    height={1024}
+                    src="/images/about-metal-basket.webp"
+                    alt="metal worker creating the best xeozrodel metal basket for xeofood"
+                    loading="lazy"
+                  />
                 </div>
                 <div className="md:h-7/12 lg:w-6/12">
                   <h2 className="text-2xl text-gray-900 font-bold md:text-4xl">Keeping the caudle hot</h2>
@@ -86,8 +108,16 @@ const About_us: NextPage = () => {
             <h2 className="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl">In us you can trust</h2>
             <div className="grid gap-y-8 gap-x-20 mt-12 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
               {teamMembers.map((teamMember: ITeamMember, index: number) => (
-                <div key={index} className="w-full max-w-xs text-center">
-                  <img className="object-cover object-center w-full h-48 mx-auto rounded-lg" src={teamMember.url} alt={"Picture of "+teamMember.fullName} />
+                <div key={index} className="relative w-full max-w-xs text-center">
+                  <div className="relative object-cover object-center w-48 h-48 mx-auto rounded-lg">
+                    <Image
+                      className="rounded-lg"
+                      layout="fill"
+                      src={teamMember.url}
+                      alt={"Picture of "+teamMember.fullName}
+                      loading="lazy"
+                    />
+                  </div>
                   <div className="mt-2">
                     <h3 className="text-lg font-medium text-gray-700">{teamMember.fullName}</h3>
                     <span className="mt-1 font-medium text-gray-600">{teamMember.position}</span>

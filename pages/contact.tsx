@@ -6,7 +6,7 @@ import Confetti from 'react-confetti';
 
 const ContactPage: NextPage = () => {
   const properties: React.CSSProperties = {
-    backgroundImage: `url('/images/contact-background.png')`
+    backgroundImage: `url('/images/contact-background.webp')`
   }
 
   const [animation, setAnimation] = useState<boolean>(false)

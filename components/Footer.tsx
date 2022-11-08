@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const Footer = () => {
   return (
-    <footer className="relative bg-slate-200 pt-8 pb-6">
+    <footer className="relative bg-slate-100 pt-8 pb-6">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap text-left lg:text-left">
           <div className="flex flex-col-reverse w-full px-4 lg:w-6/12 lg:flex-col">
@@ -30,16 +30,16 @@ const Footer = () => {
           <div className="w-full lg:w-6/12 px-0 pt-8 lg:px-4 lg:pt-0">
             <div className="flex flex-wrap items-top mb-6">
               <div className="w-full lg:w-4/12 px-4 ml-auto">
-                <span className="block uppercase text-slate-500 text-sm font-semibold mb-2">Useful Links</span>
+                <span className="block uppercase text-slate-600 text-sm font-semibold mb-2">Useful Links</span>
                 <ul className="list-unstyled">
                   <li>
-                    <Link href="/about"><a className="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm">About</a></Link>
+                    <Link href="/about"><a className="text-slate-700 hover:text-slate-800 font-semibold block py-3 md:py-1 text-sm">About</a></Link>
                   </li>
                   <li>
-                    <Link href="/reviews"><a className="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm">Reviews</a></Link>
+                    <Link href="/reviews"><a className="text-slate-700 hover:text-slate-800 font-semibold block py-3 md:py-1 text-sm">Reviews</a></Link>
                   </li>
                   <li>
-                    <Link href="/blog"><a className="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm">Blog</a></Link>
+                    <Link href="/blog"><a className="text-slate-700 hover:text-slate-800 font-semibold block py-3 md:py-1 text-sm">Blog</a></Link>
                   </li>
                 </ul>
               </div>
@@ -47,19 +47,19 @@ const Footer = () => {
                 <span className="block uppercase text-slate-500 text-sm font-semibold mb-2">Other Resources</span>
                 <ul className="list-unstyled">
                   <li>
-                    <Link href="/"><a className="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm">License</a></Link>
+                    <Link href="/"><a className="text-slate-700 hover:text-slate-800 font-semibold block py-3 md:py-1 text-sm">License</a></Link>
                   </li>
                   <li>
-                    <a className="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm" href="#">Terms &amp; Conditions</a>
+                    <a className="text-slate-700 hover:text-slate-800 font-semibold block py-3 md:py-1 text-sm" href="#">Terms &amp; Conditions</a>
                   </li>
                   <li>
-                    <a className="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm" href="#">Privacy Policy</a>
+                    <a className="text-slate-700 hover:text-slate-800 font-semibold block py-3 md:py-1 text-sm" href="#">Privacy Policy</a>
                   </li>
                   <li>
-                    <Link href="/contact"><a className="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm">Contact</a></Link>
+                    <Link href="/contact"><a className="text-slate-700 hover:text-slate-800 font-semibold block py-3 md:py-1 text-sm">Contact</a></Link>
                   </li>
                   <li>
-                    <a className="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm" href="https://github.com/corentincolsenet/google-SEO-ranking">Github</a>
+                    <a className="text-slate-700 hover:text-slate-800 font-semibold block py-3 md:py-1 text-sm" href="https://github.com/corentincolsenet/google-SEO-ranking">Github</a>
                   </li>
                 </ul>
               </div>

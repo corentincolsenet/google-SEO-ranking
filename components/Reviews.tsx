@@ -8,25 +8,25 @@ const Reviews = () => {
     {
       fullName: "Edgar Presleye",
       review: "Every day I get my hot caudle and horse bread through Xeofood from Weeminster. I do really enjoy it, I order when waking up, I have a little time to put my sanap on the table and the luncheon arrives right at door.",
-      url: "/images/reviews-person-edgar-presleye.png",
+      url: "/images/reviews-person-edgar-presleye.webp",
       stars: 5
     },
     {
       fullName: "Zanna Woodrowe",
       review: "As a woman from Beeham, it is a hard task to get food from neighbors cities such as Ningalum or Chidon due to some tensions between the cities. Xeofood always helped me to get my meal on time and still hot as if it just left any Xeozrodel cook's hands.",
-      url: "/images/reviews-person-zanna-woodrowe.png",
+      url: "/images/reviews-person-zanna-woodrowe.webp",
       stars: 5
     },
     {
       fullName: "Ainslee Radclyffee",
       review: "It's often hard to know where and what new dishes to try out. Luckily, Xeofood's workers often know a broad range of local products from every place in Xeozrodel, helping you on thy choice.",
-      url: "/images/reviews-person-ainslee-radclyffee.png",
+      url: "/images/reviews-person-ainslee-radclyffee.webp",
       stars: 5
     },
     {
       fullName: "Kelton Blackmane",
       review: "I'm from Laisy and it's been years that I wanted to try a Shundinar's manchet, some special bread from North-East of Xeozrodel, which is way too far and too dangerous for an elf like me. And thanks to Xeofood I could finally give a try at this masterpiece !",
-      url: "/images/reviews-person-kelton-blackmane.png",
+      url: "/images/reviews-person-kelton-blackmane.webp",
       stars: 5
     },
   ]

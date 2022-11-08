@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 export default function Homepage() {
   const properties: React.CSSProperties = {
     backgroundImage: `url("/images/home-bg.webp")`
@@ -36,8 +38,15 @@ export default function Homepage() {
                   Recommended at 97% by xeozrodadvisor regarding food delivery and reviewed at 5/5 by &quot;xeozrodel fork&quot;, the prestigious newspaper.
                 </p>
               </div>
-              <div className="md:h-5/12 lg:w-5/12">
-                <img className='rounded-3xl' src="/images/home-broomstick.png" alt="wizzard on a broomstick delivering food in xeozrodel" loading="lazy" width="" height="" />
+              <div className="relative md:h-5/12 lg:w-5/12">
+                <Image
+                  className='rounded-3xl'
+                  src="/images/home-broomstick.webp"
+                  width={1152}
+                  height={1024}
+                  alt="wizzard on a broomstick delivering food in xeozrodel"
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>
