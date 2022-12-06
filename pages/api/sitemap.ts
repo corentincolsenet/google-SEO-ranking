@@ -14,13 +14,13 @@ export default function handler(
     const baseUrl = "https://www.xeozrodel-food.com/"
     const pagesUrls = [
         { url: `${baseUrl}`, priority: "1.0" },
-        { url: `${baseUrl}about`, priority: "1.0" },
+        { url: `${baseUrl}about`, priority: "0.7" },
         { url: `${baseUrl}services`, priority: "0.7" },
         { url: `${baseUrl}reviews`, priority: "0.7" },
-        { url: `${baseUrl}contact`, priority: "0.5" },
-        { url: `${baseUrl}blog`, priority: "0.8" },
-        { url: `${baseUrl}blog/xeofood-what-is-it`, priority: "0.9" },
-        { url: `${baseUrl}blog/the-places-to-be-in-xeozrodel`, priority: "0.9" }
+        { url: `${baseUrl}contact`, priority: "0.7" },
+        { url: `${baseUrl}blog`, priority: "0.7" },
+        { url: `${baseUrl}blog/xeofood-what-is-it`, priority: "0.7" },
+        { url: `${baseUrl}blog/the-places-to-be-in-xeozrodel`, priority: "0.7" }
     ]
 
     const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
@@ -31,7 +31,7 @@ export default function handler(
                 <url>
                 <loc>${page.url}</loc>
                 <lastmod>${new Date().toISOString()}</lastmod>
-                <changefreq>weekly</changefreq>
+                <changefreq>daily</changefreq>
                 <priority>${page.priority}</priority>
                 </url>
             `;
