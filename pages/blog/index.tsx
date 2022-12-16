@@ -3,18 +3,18 @@ import { NextSeo } from 'next-seo'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 import moment from "moment"
-
-import { sanityClient, urlFor } from "../../sanity"
-import { IPost } from '../../typings'
-import Layout from '../../components/Layout'
+import { sanityClient, urlFor } from "../../sanity";
+import { IPost } from '../../typings';
+import Layout from '../../components/Layout';
 
 interface Props {
   posts: [IPost];
 }
 
 const Blog = ({ posts }: Props) => {
-  const router = useRouter()
+  const router = useRouter();
 
+  posts.sort((firstDate: IPost, secondDate: IPost) => new Date(secondDate.publishedAt).getTime() - new Date(firstDate.publishedAt).getTime());
   return (
     <>
       <NextSeo
@@ -22,8 +22,8 @@ const Blog = ({ posts }: Props) => {
         description="All available articles to learn more about what Xeofood is and the world of Xeozrodel. Check this out!"
       />
       <Layout>
-        <section className="bg-white">
-          <div className="container px-6 py-24 mx-auto">
+        <section className="bg-white mt-[66px]">
+          <div className="container px-8 py-12 md:py-16 mx-auto">
             <div className="text-center">
               <h1 className="text-3xl text-center font-semibold text-gray-800 capitalize xl:text-5xl lg:text-4xl">From the <span className="text-secondary">Xeofood</span> blog</h1>
               <h2 className="max-w-lg mx-auto mt-8 text-gray-500">
@@ -38,7 +38,8 @@ const Blog = ({ posts }: Props) => {
             </div>
             <div className="flex flex-wrap items-start justify-center gap-8 mt-8 md:mt-16">
               {posts.map((post) => {
-                const createdPostDate = moment(post._createdAt).format('dddd MMMM D Y')
+                const createdPostDate = moment(post.publishedAt).format('dddd MMMM D Y');
+
                 return (
                   <div
                     key={post._id}
@@ -95,7 +96,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
       _id,
       title,
       slug,
-      _createdAt,
+      publishedAt,
       author -> {
           name,
           description,

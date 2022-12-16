@@ -1,32 +1,47 @@
-import Image from "next/image"
-import Link from "next/link"
+import Image from "next/image";
+import Link from "next/link";
+import { useLottie } from "lottie-react";
+
+import * as scrollDownAnimation from "../public/lotties/scroll-down.json";
 
 export default function Homepage() {
   const properties: React.CSSProperties = {
-    backgroundImage: `url("/images/home-bg.webp")`
-  }
+    backgroundImage: `url("/images/home-background.webp")`
+  };
+
+  const lottieOptions = {
+    animationData: scrollDownAnimation,
+    loop: true,
+  };
+
+  const { View } = useLottie(lottieOptions);
 
   return (
     <>
-      <section className='flex flex-col justify-center w-full'>
-        <div className='px-8 py-12 md:py-20 w-full flex flex-wrap items-center justify-center'>
+      <section className='relative bg-fixed bg-center bg-cover' style={properties}>
+        {/* scroll down lottie */}
+        <a href="#explanations" className='absolute left-1/2 bottom-0 w-44 h-44 transform -translate-x-1/2 cursor-pointer'>
+          {View}
+        </a>
+        <div className='flex flex-col justify-center w-screen h-screen bg-black/50 px-8 py-12 md:py-20 flex-wrap items-center'>
           <div className='whitespace-pre-wrap max-w-xl'>
-            <h1 className='text-4xl text-center font-bold md:leading-relaxed break-words pb-3'>Get thy <span className='text-secondary'>FOOD</span> from everywhere in <span className='text-secondary'><strong>XEOZRODEL</strong></span></h1>
+            <h1 className='text-4xl text-center text-white font-bold md:leading-relaxed break-words pb-3'>Get thy <span className='text-secondary'>FOOD</span> from everywhere in <span className='text-secondary'><strong>XEOZRODEL</strong></span></h1>
             <p className="text-center font-bold mx-0 mt-2 mb-0 leading-relaxed text-tertiary">
-              Food from your favorite restaurants, delivered to your door
+              Food from your favorite restaurants, delivered to your door.
+              XeoFood is available across 95% of Xeozrodel ! We garuantee your delivery within 15 minutes.
             </p>
           </div>
         </div>
       </section>
-      <section className="bg-fixed bg-center bg-cover" style={properties}>
+      {/* <section className="bg-fixed bg-center bg-cover" style={properties}>
         <div className="flex flex-col w-full h-[550px] justify-center items-center bg-black/40">
           <h2 className="text-white text-center text-3xl font-semibold mt-20 mb-10 mx-5">
             Looking for some pandemain ?
           </h2>
           <p className='text-white text-center justify-center text-lg font-medium mx-5'>XeoFood is available across 95% of Xeozrodel ! We garuantee your delivery within 15 minutes.</p>
         </div>
-      </section>
-      <section className='space-y-8 py-20 px-8 max-w-6xl mx-auto'>
+      </section> */}
+      <section id="explanations" className='space-y-8 py-20 px-8 max-w-6xl mx-auto'>
         <div className="container mx-auto px-4">
           <h2 className="text-3xl text-center font-semibold my-6 mb-10">We offer the best food delivery in all <span className='text-secondary'><strong>Xeozrodel</strong></span> !</h2>
           <div className="container bg-gray-100 m-auto px-6 py-8 text-gray-600 md:px-12 xl:px-6 rounded-xl">
@@ -44,7 +59,7 @@ export default function Homepage() {
               Not to mention creative works such as painters, bards and different kind of art workers and performers. Xeozrodel is also full of different shops (such as Kjoarefell jewelers and forges), restaurants (you must try fish food from the Astral Port of Mostyw).
             </p>
           </div>
-          <div className="container bg-gray-100 m-auto px-6 py-8 text-gray-600 md:px-12 xl:px-6 sm:mt-4 md:mt-6 xl:mt-8 rounded-xl">
+          <div className="container bg-gray-100 m-auto px-6 py-8 text-gray-600 md:px-12 xl:px-6 mt-8 md:mt-8 xl:mt-10 rounded-xl">
             <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
               <div className="md:h-7/12 lg:w-6/12">
                 <p className='text-left'>

@@ -7,7 +7,7 @@ const Layout = ({ children }: any) => {
     <>
       <Header />
 
-      <main className="pt-[66px]">
+      <main>
         {children}
       </main>
 

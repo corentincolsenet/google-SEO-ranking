@@ -32,8 +32,8 @@ const Reviews = () => {
   ]
 
   return (
-    <section className="text-gray-600 body-font">
-      <div className="container px-5 py-24 mx-auto">
+    <section className="text-gray-600 body-font mt-[66px]">
+      <div className="container px-8 py-12 md:py-16 mx-auto">
         <h2 className="mb-20 text-3xl text-center font-semibold text-gray-800 capitalize xl:text-5xl lg:text-4xl">
           What our <span className="text-secondary">customers</span> are saying
         </h2>

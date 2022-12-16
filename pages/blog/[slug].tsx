@@ -14,7 +14,8 @@ interface Props {
 }
 
 const Post = ({ post }: Props) => {
-  const createdPostDate = moment(post._createdAt).format('dddd MMMM D Y')
+  console.log(post.publishedAt)
+  const createdPostDate = moment(post.publishedAt).format('dddd MMMM D Y')
 
   return (
     <>
@@ -57,12 +58,11 @@ const Post = ({ post }: Props) => {
               projectId={process.env.NEXT_PUBLIC_SANITY_PROJECT_ID}
               content={post.body}
               serializers={{
-                h1: (props: any) => <h1 className="text-2xl font-bold my-6 text-gray-900" {...props} />,
-                h2: (props: any) => <h2 className="text-2xl font-bold my-6 text-gray-900" {...props} />,
-                normal: (props: any) => <p className="text-md font-medium text-justify text-gray-700" {...props} />,
+                h1: (props: any) => <h1 className="text-2xl font-bold text-gray-900" {...props} />,
+                h2: (props: any) => <h2 className="text-2xl font-bold text-gray-900" {...props} />,
+                normal: (props: any) => <p className="text-md font-medium text-justify text-gray-700 py-2" {...props} />,
                 li: ({ children }: any) => <li className="ml-4 list-disc font-medium">{children}</li>,
                 link: ({ href, children }: any) => <a href={href} className="text-secondary hover:underline">{children}</a>,
-                img: (props: any) => <img className="w" loading='lazy' alt="" {...props} />,
               }}
             />
           </div>
@@ -84,7 +84,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
     *[_type == "post"] {
       _id,
       slug {
-          current
+        current
       }
     }
   `
@@ -107,7 +107,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const query = `
     *[_type == "post" && slug.current == $slug][0] {
       _id,
-      _createdAt,
+      publishedAt,
       title,
       author -> {
           name,
