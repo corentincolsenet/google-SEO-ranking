@@ -59,7 +59,7 @@ export default function Homepage() {
               Not to mention creative works such as painters, bards and different kind of art workers and performers. Xeozrodel is also full of different shops (such as Kjoarefell jewelers and forges), restaurants (you must try fish food from the Astral Port of Mostyw).
             </p>
           </div>
-          <div className="container bg-gray-100 m-auto px-6 py-8 text-gray-600 md:px-12 xl:px-6 sm:mt-4 md:mt-6 xl:mt-8 rounded-xl">
+          <div className="container bg-gray-100 m-auto px-6 py-8 text-gray-600 md:px-12 xl:px-6 mt-8 md:mt-8 xl:mt-10 rounded-xl">
             <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
               <div className="md:h-7/12 lg:w-6/12">
                 <p className='text-left'>
