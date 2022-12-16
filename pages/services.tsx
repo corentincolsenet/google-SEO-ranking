@@ -2,6 +2,9 @@ import { NextPage } from "next";
 import Layout from "../components/Layout";
 import { NextSeo } from "next-seo";
 import Image from "next/image";
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
+
 
 const Services: NextPage = () => {
 
@@ -15,14 +18,20 @@ const Services: NextPage = () => {
       <Layout>
         {/* Title */}
         <section className='flex flex-col justify-center w-full'>
-          <div className='px-8 py-12 md:py-20 w-full flex flex-wrap items-center justify-center'>
+          <div className='px-8 py-12 md:py-16 w-full flex flex-wrap items-center justify-center'>
             <div className='whitespace-pre-wrap max-w-xl-3xl'>
-              <h1 className='text-4xl text-center font-bold md:leading-relaxed break-words pb-3'><span className='text-secondary'>Xeofood</span> delivery process in <span className='text-secondary'><strong>Xeozrodel</strong></span></h1>
+              <h1 className='text-4xl text-center font-bold md:leading-relaxed break-words'><span className='text-secondary'>Xeofood</span> delivery process in <span className='text-secondary'><strong>Xeozrodel</strong></span></h1>
             </div>
           </div>
         </section>
         <section className="body-font">
-          <p className="text-3xl text-center font-bold mx-0 mb-0 mt-6 leading-relaxed">
+          <p className='container max-w-4xl mx-auto md:leading-relaxed break-words px-5 text-justify sm:text-center'>
+            We believe that every person should get the right to have a decent meal, even on the top of the grey wall mountains.
+            That&apos;s why we created Xeofood. Our DNA resides in the quality of the products delivered and the proximity with local merchants.
+            In such a magnificient world, It would be a shame not to take advantage of it.
+            With the upcoming world cup, taking place in 2030 in Xeozrodel, we want to promote the best food in xeozrodel to the supporters from around the world.
+          </p>
+          <p className="text-3xl text-center font-bold mt-16 leading-relaxed">
             How it&apos;s working ?
           </p>
           <div className="container px-5 py-14 mx-auto">
@@ -81,7 +90,10 @@ const Services: NextPage = () => {
           <div className="container px-5 py-16 mx-auto">
             <div className="flex flex-col text-center w-full mb-20">
               <h2 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Key figures on Xeofood</h2>
-              <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Through 200 years of experience, Xeofood is your best ally on quickly getting your favorite Xeozrodel supper.</p>
+              <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+                Through 200 years of experience, Xeofood is your best ally on quickly getting your favorite Xeozrodel supper.
+                We have thousands of shop partners across the country ready to serve you.
+              </p>
             </div>
             <div className="flex flex-wrap justify-center -m-4 text-center">
               <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
@@ -120,7 +132,8 @@ const Services: NextPage = () => {
         <section className="body-font">
           <div className="flex flex-col items-center w-full mb-20 py-16">
             <h2 className="sm:text-3xl font-medium title-font mb-4 text-gray-900">Xeozrodel coverage</h2>
-            <div className="relative h-[300px] w-[400px] md:h-[500px] md:w-[900px] flex-shrink-0 bg-cover">
+            <Zoom>
+              <div className="relative h-[300px] w-[400px] md:h-[500px] md:w-[900px] flex-shrink-0 bg-cover">
                 <Image
                   src="/images/services-coverage-xeozrodel-map.webp"
                   layout="fill"
@@ -129,6 +142,7 @@ const Services: NextPage = () => {
                   alt="A Xeozrodel map showing which parts are not covered by Xeofood delivery."
                 />
               </div>
+            </Zoom>
           </div>
         </section>
       </Layout>
