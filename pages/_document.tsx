@@ -14,7 +14,7 @@ export default function Document() {
                     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
                     })(window,document,'script','dataLayer','GTM-MK8TXV5');`,
           }}
-          strategy="beforeInteractive"
+          strategy="lazyOnload"
         />
       </Head>
       <body>
