@@ -58,7 +58,7 @@ const ContactPage: NextPage = () => {
                 <div className="text-white lg:w-1/2 lg:mx-6">
                   <h2 className="text-3xl font-semibold capitalize lg:text-5xl">Let us hear your voice</h2>
                   <p className="max-w-xl mt-6">
-                    If you have any question to ask, any complain or whatsoever, feel free to contact us with this magic form. It&aposll write your message down with a magic ink nib and ou customer support will tie it to an owl messenger headed to our headquarters in Styford. 
+                    If you have any question to ask, any complain or whatsoever, feel free to contact us with this magic form. It&apos;ll write your message down with a magic ink nib and ou customer support will tie it to an owl messenger headed to our headquarters in Styford. 
                   </p>
                 </div>
 
