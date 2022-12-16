@@ -2,6 +2,9 @@ import { NextPage } from "next";
 import Layout from "../components/Layout";
 import { NextSeo } from "next-seo";
 import Image from "next/image";
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
+
 
 const Services: NextPage = () => {
 
@@ -129,7 +132,8 @@ const Services: NextPage = () => {
         <section className="body-font">
           <div className="flex flex-col items-center w-full mb-20 py-16">
             <h2 className="sm:text-3xl font-medium title-font mb-4 text-gray-900">Xeozrodel coverage</h2>
-            <div className="relative h-[300px] w-[400px] md:h-[500px] md:w-[900px] flex-shrink-0 bg-cover">
+            <Zoom>
+              <div className="relative h-[300px] w-[400px] md:h-[500px] md:w-[900px] flex-shrink-0 bg-cover">
                 <Image
                   src="/images/services-coverage-xeozrodel-map.webp"
                   layout="fill"
@@ -138,6 +142,7 @@ const Services: NextPage = () => {
                   alt="A Xeozrodel map showing which parts are not covered by Xeofood delivery."
                 />
               </div>
+            </Zoom>
           </div>
         </section>
       </Layout>

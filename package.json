@@ -17,6 +17,7 @@
     "react": "18.2.0",
     "react-confetti": "^6.1.0",
     "react-dom": "18.2.0",
+    "react-medium-image-zoom": "^5.1.2",
     "react-portable-text": "^0.5.1",
     "sharp": "^0.31.2"
   },
