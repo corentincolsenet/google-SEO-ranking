@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 
 export default function Homepage() {
   const properties: React.CSSProperties = {
@@ -29,6 +30,21 @@ export default function Homepage() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl text-center font-semibold my-6 mb-10">We offer the best food delivery in all <span className='text-secondary'><strong>Xeozrodel</strong></span> !</h2>
           <div className="container bg-gray-100 m-auto px-6 py-8 text-gray-600 md:px-12 xl:px-6 rounded-xl">
+            <p className='text-center text-lg font-bold leading-relaxed'>
+              But first of all, what is Xeozrodel ?
+            </p>
+            <p className='text-left pt-2 leading-relaxed'>
+              Xeozrodel is a medieval fantasy world with various landscapes ranging from snowy mountains and azure oceans to shadowed canyons and huge deserts.
+              The sun is illuminating this world with a red crimson sun and is primarily populated with humains, with smaller numbers of orcs, dwarves, elves and a few chimeras.
+            </p>
+            <p className='text-left pt-2 leading-relaxed'>
+              Xeozrodel is full of cities and places steeped in history. You&apos;ll find huge castles like Diculson&apos;s Hold held by orcs, as well as small gnomes settlements such as Clebluff.
+            </p>
+            <p className='text-left pt-2 leading-relaxed'>
+              Not to mention creative works such as painters, bards and different kind of art workers and performers. Xeozrodel is also full of different shops (such as Kjoarefell jewelers and forges), restaurants (you must try fish food from the Astral Port of Mostyw).
+            </p>
+          </div>
+          <div className="container bg-gray-100 m-auto px-6 py-8 text-gray-600 md:px-12 xl:px-6 sm:mt-4 md:mt-6 xl:mt-8 rounded-xl">
             <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
               <div className="md:h-7/12 lg:w-6/12">
                 <p className='text-left'>
@@ -51,7 +67,11 @@ export default function Homepage() {
             </div>
           </div>
           <h3 className='text-lg text-center py-4 mt-8'>
-            Hale be thou and occasionally visit your local herald.
+            Hale be thou and occasionally visit your local herald or contact us with this&nbsp;
+              <Link href="/contact">
+                <a className='text-secondary hover:underline hover:text-main transition-colors ease-in-out duration-300'>magic link</a>
+              </Link>
+            .
             <br />
             Our mystical food teleportation will soon be ready to deliver thy food even faster !
           </h3>
@@ -59,4 +79,4 @@ export default function Homepage() {
       </section>
     </>
   )
-}
+} 
