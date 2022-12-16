@@ -1,19 +1,20 @@
 import type { GetServerSideProps } from 'next'
 import { NextSeo } from 'next-seo'
-import { useRouter } from 'next/router'
-import moment from "moment"
+import { useRouter } from 'next/router';
+import moment from "moment";
 
-import { sanityClient, urlFor } from "../../sanity"
-import { IPost } from '../../typings'
-import Layout from '../../components/Layout'
+import { sanityClient, urlFor } from "../../sanity";
+import { IPost } from '../../typings';
+import Layout from '../../components/Layout';
 
 interface Props {
   posts: [IPost];
 }
 
 const Blog = ({ posts }: Props) => {
-  const router = useRouter()
+  const router = useRouter();
 
+  posts.sort((firstDate: IPost, secondDate: IPost) => new Date(secondDate.publishedAt).getTime() - new Date(firstDate.publishedAt).getTime());
   return (
     <>
       <NextSeo
@@ -32,7 +33,8 @@ const Blog = ({ posts }: Props) => {
             </div>
             <div className="flex flex-wrap items-start justify-center gap-8 mt-8 md:mt-16">
               {posts.map((post) => {
-                const createdPostDate = moment(post._createdAt).format('dddd MMMM D Y')
+                const createdPostDate = moment(post.publishedAt).format('dddd MMMM D Y');
+
                 return (
                   <div
                     key={post._id}
@@ -89,7 +91,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
       _id,
       title,
       slug,
-      _createdAt,
+      publishedAt,
       author -> {
           name,
           description,

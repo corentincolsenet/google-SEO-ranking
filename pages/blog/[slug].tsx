@@ -14,7 +14,8 @@ interface Props {
 }
 
 const Post = ({ post }: Props) => {
-  const createdPostDate = moment(post._createdAt).format('dddd MMMM D Y')
+  console.log(post.publishedAt)
+  const createdPostDate = moment(post.publishedAt).format('dddd MMMM D Y')
 
   return (
     <>
@@ -83,7 +84,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
     *[_type == "post"] {
       _id,
       slug {
-          current
+        current
       }
     }
   `
@@ -106,7 +107,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const query = `
     *[_type == "post" && slug.current == $slug][0] {
       _id,
-      _createdAt,
+      publishedAt,
       title,
       author -> {
           name,
