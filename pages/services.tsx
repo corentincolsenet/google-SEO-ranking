@@ -15,20 +15,20 @@ const Services: NextPage = () => {
       <Layout>
         {/* Title */}
         <section className='flex flex-col justify-center w-full'>
-          <div className='px-8 py-12 md:py-20 w-full flex flex-wrap items-center justify-center'>
+          <div className='px-8 py-12 md:py-16 w-full flex flex-wrap items-center justify-center'>
             <div className='whitespace-pre-wrap max-w-xl-3xl'>
               <h1 className='text-4xl text-center font-bold md:leading-relaxed break-words'><span className='text-secondary'>Xeofood</span> delivery process in <span className='text-secondary'><strong>Xeozrodel</strong></span></h1>
             </div>
           </div>
         </section>
         <section className="body-font">
-          <p className='container max-w-4xl mx-auto text-center md:leading-relaxed break-words'>
+          <p className='container max-w-4xl mx-auto md:leading-relaxed break-words px-5 text-justify sm:text-center'>
             We believe that every person should get the right to have a decent meal, even on the top of the grey wall mountains.
-            That's why we created Xeofood. Our DNA resides in the quality of the products delivered and the proximity with local merchants.
+            That&apos;s why we created Xeofood. Our DNA resides in the quality of the products delivered and the proximity with local merchants.
             In such a magnificient world, It would be a shame not to take advantage of it.
             With the upcoming world cup, taking place in 2030 in Xeozrodel, we want to promote the best food in xeozrodel to the supporters from around the world.
-            </p>
-          <p className="text-3xl text-center font-bold mx-0 mb-0 mt-6 leading-relaxed">
+          </p>
+          <p className="text-3xl text-center font-bold mt-16 leading-relaxed">
             How it&apos;s working ?
           </p>
           <div className="container px-5 py-14 mx-auto">

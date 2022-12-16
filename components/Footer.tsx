@@ -36,6 +36,9 @@ const Footer = () => {
                     <Link href="/about"><a className="text-slate-700 hover:text-slate-800 font-semibold block py-3 md:py-1 text-sm">About</a></Link>
                   </li>
                   <li>
+                    <Link href="/services"><a className="text-slate-700 hover:text-slate-800 font-semibold block py-3 md:py-1 text-sm">Services</a></Link>
+                  </li>
+                  <li>
                     <Link href="/reviews"><a className="text-slate-700 hover:text-slate-800 font-semibold block py-3 md:py-1 text-sm">Reviews</a></Link>
                   </li>
                   <li>
@@ -46,15 +49,6 @@ const Footer = () => {
               <div className="w-full lg:w-4/12 px-4 pt-6 lg:pt-0">
                 <span className="block uppercase text-slate-500 text-sm font-semibold mb-2">Other Resources</span>
                 <ul className="list-unstyled">
-                  <li>
-                    <Link href="/"><a className="text-slate-700 hover:text-slate-800 font-semibold block py-3 md:py-1 text-sm">License</a></Link>
-                  </li>
-                  <li>
-                    <a className="text-slate-700 hover:text-slate-800 font-semibold block py-3 md:py-1 text-sm" href="#">Terms &amp; Conditions</a>
-                  </li>
-                  <li>
-                    <a className="text-slate-700 hover:text-slate-800 font-semibold block py-3 md:py-1 text-sm" href="#">Privacy Policy</a>
-                  </li>
                   <li>
                     <Link href="/contact"><a className="text-slate-700 hover:text-slate-800 font-semibold block py-3 md:py-1 text-sm">Contact</a></Link>
                   </li>
