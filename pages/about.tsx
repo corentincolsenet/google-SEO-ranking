@@ -3,6 +3,7 @@ import { NextSeo } from 'next-seo';
 import Layout from '../components/Layout';
 import { ITeamMember } from '../typings';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const About_us: NextPage = () => {
   const properties: React.CSSProperties = {
@@ -125,6 +126,16 @@ const About_us: NextPage = () => {
                 </div>
               ))}
             </div>
+            <p className="mt-12 text-gray-600 text-center">Our head team is formed of three dedicated Xeozrodians gourmets who enjoys food from everywhere in the world.<br/>
+            Creating Xeofood came to their mind while traveling all around Xeozrodel struggling to taste every local specialty.<br/>
+            Thus, leading to the best collaboration we could have dreamed of, bringing Xeofood to life.</p>
+            <p className="mt-12 text-gray-600 text-center">If you want to read more about us, head over to our&nbsp;
+              <Link href="/services">
+                <a className='text-secondary font-bold'>
+                  Services
+                </a>
+              </Link>
+            &nbsp;section.</p>
           </div>
         </section>
       </Layout>

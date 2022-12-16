@@ -20,7 +20,7 @@ const Services: NextPage = () => {
         <section className='flex flex-col justify-center w-full'>
           <div className='px-8 py-12 md:py-16 w-full flex flex-wrap items-center justify-center'>
             <div className='whitespace-pre-wrap max-w-xl-3xl'>
-              <h1 className='text-4xl text-center font-bold md:leading-relaxed break-words'><span className='text-secondary'>Xeofood</span> delivery process in <span className='text-secondary'><strong>Xeozrodel</strong></span></h1>
+              <h1 className='text-4xl text-center font-bold md:leading-relaxed break-words'><span className='text-secondary'>Xeofood</span> delivery service in <span className='text-secondary'><strong>Xeozrodel</strong></span></h1>
             </div>
           </div>
         </section>

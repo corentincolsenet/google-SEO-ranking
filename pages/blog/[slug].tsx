@@ -68,7 +68,7 @@ const Post = ({ post }: Props) => {
           </div>
 
           <Link href="/blog">
-            <a className="inline-block mt-12 text-secondary underline hover:text-tertiary">See other articles</a>
+            <a className="inline-block mt-12 text-secondary underline hover:text-tertiary">Read other articles</a>
           </Link>
 
         </article>

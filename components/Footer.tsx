@@ -30,7 +30,7 @@ const Footer = () => {
           <div className="w-full lg:w-6/12 px-0 pt-8 lg:px-4 lg:pt-0">
             <div className="flex flex-wrap items-top mb-6">
               <div className="w-full lg:w-4/12 px-4 ml-auto">
-                <span className="block uppercase text-slate-600 text-sm font-semibold mb-2">Useful Links</span>
+                <span className="block uppercase text-slate-500 text-sm font-semibold mb-2">Useful Links</span>
                 <ul className="list-unstyled">
                   <li>
                     <Link href="/about"><a className="text-slate-700 hover:text-slate-800 font-semibold block py-3 md:py-1 text-sm">About</a></Link>

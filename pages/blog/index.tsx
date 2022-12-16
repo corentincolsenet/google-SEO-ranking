@@ -1,6 +1,7 @@
 import type { GetServerSideProps } from 'next'
 import { NextSeo } from 'next-seo'
 import { useRouter } from 'next/router'
+import Link from 'next/link'
 import moment from "moment"
 
 import { sanityClient, urlFor } from "../../sanity"
@@ -25,9 +26,14 @@ const Blog = ({ posts }: Props) => {
           <div className="container px-6 py-24 mx-auto">
             <div className="text-center">
               <h1 className="text-3xl text-center font-semibold text-gray-800 capitalize xl:text-5xl lg:text-4xl">From the <span className="text-secondary">Xeofood</span> blog</h1>
-
               <h2 className="max-w-lg mx-auto mt-8 text-gray-500">
-                Information about <span className="text-secondary"><strong>Xeozrodel</strong></span> and <span className="text-secondary"><strong>Xeofood</strong></span> on numerous articles written for you.
+                Information about <span className="text-secondary"><strong>Xeozrodel</strong></span> and&nbsp;
+                <Link href="/contact">
+                  <a className='text-secondary font-bold'>
+                    Xeofood
+                  </a>
+                </Link>
+                &nbsp;on numerous articles written for you.
               </h2>
             </div>
             <div className="flex flex-wrap items-start justify-center gap-8 mt-8 md:mt-16">
