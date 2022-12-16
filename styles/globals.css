@@ -5,9 +5,12 @@
 html,
 body {
   padding: 0;
+  padding-top: "66px";
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  scroll-behavior: smooth;
+  overflow-y: auto;
 }
 
 strong {

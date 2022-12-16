@@ -17,10 +17,16 @@ const Services: NextPage = () => {
       />
       <Layout>
         {/* Title */}
-        <section className='flex flex-col justify-center w-full'>
+        <section className='flex flex-col justify-center w-full mt-[66px]'>
           <div className='px-8 py-12 md:py-16 w-full flex flex-wrap items-center justify-center'>
             <div className='whitespace-pre-wrap max-w-xl-3xl'>
-              <h1 className='text-4xl text-center font-bold md:leading-relaxed break-words'><span className='text-secondary'>Xeofood</span> delivery process in <span className='text-secondary'><strong>Xeozrodel</strong></span></h1>
+            <h2 className="mb-20 text-3xl text-center font-semibold text-gray-800 capitalize xl:text-5xl lg:text-4xl">
+              <span className='text-secondary'>Xeofood</span> delivery process in <span className='text-secondary'><strong>Xeozrodel</strong></span>
+            </h2>
+            {/* <h2 className="mb-20 text-3xl text-center font-semibold text-gray-800 capitalize xl:text-5xl lg:text-4xl">
+              <span className='text-secondary'>Xeofood</span> delivery process in <span className='text-secondary'><strong>Xeozrodel</strong></span>
+            </h2> */}
+              {/* <h1 className='mb-20 text-4xl text-center font-bold md:leading-relaxed break-words'><span className='text-secondary'>Xeofood</span> delivery process in <span className='text-secondary'><strong>Xeozrodel</strong></span></h1> */}
             </div>
           </div>
         </section>

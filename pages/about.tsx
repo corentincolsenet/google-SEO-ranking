@@ -1,13 +1,16 @@
 import type { NextPage } from 'next';
 import { NextSeo } from 'next-seo';
 import Layout from '../components/Layout';
-import { ITeamMember } from '../typings';
 import Image from 'next/image';
+import { useLottie } from "lottie-react";
+
+import { ITeamMember } from '../typings';
+import * as scrollDownAnimation from "../public/lotties/scroll-down.json";
 
 const About_us: NextPage = () => {
   const properties: React.CSSProperties = {
     backgroundImage: `url("/images/about-xeofood.webp")`
-  }
+  };
 
   const teamMembers: Array<ITeamMember> = [
     {
@@ -25,7 +28,14 @@ const About_us: NextPage = () => {
       position: "Cofounder & COO",
       url: "/images/about-team-leo-henneville.webp",
     },
-  ]
+  ];
+
+  const lottieOptions = {
+    animationData: scrollDownAnimation,
+    loop: true,
+  };
+
+  const { View } = useLottie(lottieOptions);
 
   return (
     <>
@@ -35,12 +45,16 @@ const About_us: NextPage = () => {
       />
       <Layout>
         <section>
-          <div className='bg-scroll bg-center bg-cover' style={properties}>
-            <div className='flex justify-center items-center h-screen bg-black/30'>
+          <div className='relative bg-scroll bg-center bg-cover' style={properties}>
+            {/* scroll down lottie */}
+            <a href="#explanations" className='absolute left-1/2 bottom-0 w-44 h-44 transform -translate-x-1/2 cursor-pointer'>
+              {View}
+            </a>
+            <div className='flex justify-center items-center w-screen h-screen bg-black/30'>
               <h1 className='text-white text-7xl md:text-9xl'><strong>Xeofood</strong></h1>
             </div>
           </div>
-          <div className="py-16 bg-white">
+          <div id="explanations" className="py-16 bg-white">
             <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
               <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
                 <div className="relative md:h-5/12 lg:w-5/12">
