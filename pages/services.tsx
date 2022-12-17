@@ -2,6 +2,7 @@ import { NextPage } from "next";
 import Layout from "../components/Layout";
 import { NextSeo } from "next-seo";
 import Image from "next/image";
+import Link from "next/link";
 import Zoom from 'react-medium-image-zoom'
 import 'react-medium-image-zoom/dist/styles.css'
 
@@ -20,18 +21,12 @@ const Services: NextPage = () => {
         <section className='flex flex-col justify-center w-full mt-[66px]'>
           <div className='px-8 py-12 md:py-16 w-full flex flex-wrap items-center justify-center'>
             <div className='whitespace-pre-wrap max-w-xl-3xl'>
-            <h1 className="mb-20 text-3xl text-center font-semibold text-gray-800 capitalize xl:text-5xl lg:text-4xl">
-              <span className='text-secondary'>Xeofood</span> delivery process in <span className='text-secondary'><strong>Xeozrodel</strong></span>
-            </h1>
-            {/* <h2 className="mb-20 text-3xl text-center font-semibold text-gray-800 capitalize xl:text-5xl lg:text-4xl">
-              <span className='text-secondary'>Xeofood</span> delivery process in <span className='text-secondary'><strong>Xeozrodel</strong></span>
-            </h2> */}
-              {/* <h1 className='mb-20 text-4xl text-center font-bold md:leading-relaxed break-words'><span className='text-secondary'>Xeofood</span> delivery process in <span className='text-secondary'><strong>Xeozrodel</strong></span></h1> */}
+              <h1 className='mb-2 text-4xl text-center font-bold md:leading-relaxed break-words'><span className='text-secondary'>Xeofood</span> delivery process in <span className='text-secondary'><strong>Xeozrodel</strong></span></h1>
             </div>
           </div>
         </section>
         <section className="body-font">
-          <p className='container max-w-4xl mx-auto md:leading-relaxed break-words px-5 text-justify sm:text-center'>
+          <p className='container max-w-4xl mx-auto md:leading-relaxed break-words px-5 text-center sm:text-center'>
             We believe that every person should get the right to have a decent meal, even on the top of the grey wall mountains.
             That&apos;s why we created Xeofood. Our DNA resides in the quality of the products delivered and the proximity with local merchants.
             In such a magnificient world, It would be a shame not to take advantage of it.
@@ -143,12 +138,54 @@ const Services: NextPage = () => {
                 <Image
                   src="/images/services-coverage-xeozrodel-map.webp"
                   layout="fill"
-                  className="image"
+                  className="rounded-md"
                   loading="lazy"
                   alt="A Xeozrodel map showing which parts are not covered by Xeofood delivery."
                 />
               </div>
             </Zoom>
+            <p className='container max-w-4xl mx-auto md:leading-relaxed break-words mt-2 px-5 text-center sm:text-center'>
+              We are able to deliver in most cities of Xeozrodel ! (marked with red green dots on the map)<br/>
+              For safety purpose of our delivery team, we cannot deliver any tyrant-held castle nor ruin nor toxic swamp.
+              Xeonimbuses 2000 are strong and fast but a good delivery needs our worker to interact with you in a safe environment.
+              At the slightest sign of danger, Xeofood workers are required to flee and avoid any risk.
+            </p>
+            <h2 className='text-gray-900 text-2xl title-font text-center font-medium px-6 mb-2 mt-14'>
+              The ongoing wars leading to be undeliverable by Xeofood:
+            </h2>
+            <div className="flex flex-wrap gap-6 px-6 pt-2 items-center justify-center">
+              <div className='flex justify-center flex-col mt-4'>
+                <h3 className="sm:text-lg font-medium title-font mb-2 text-center text-gray-900">Diculson&apos;s Hold</h3>
+                <div className="relative w-96 h-64 rounded-full flex-shrink-0 bg-cover">
+                  <Image
+                    src="/images/services-coverage-diculson-hold.webp"
+                    layout="fill"
+                    className="rounded-xl"
+                    loading="lazy"
+                    alt="Dilucson's Hold Xeozrodel castle image"
+                  />
+                </div>
+              </div>
+              <div className='flex justify-center flex-col mt-4'>
+                <h3 className="sm:text-lg font-medium title-font mb-2 text-center text-gray-900">Wyeham</h3>
+                <div className="relative w-96 h-64 rounded-full flex-shrink-0 bg-cover">
+                  <Image
+                    src="/images/services-coverage-wyeham.webp"
+                    layout="fill"
+                    className="rounded-xl"
+                    loading="lazy"
+                    alt="Wyeham Xeozrodel small village image"
+                  />
+                </div>
+              </div>
+            </div>
+            <p className='container max-w-4xl mx-auto md:leading-relaxed break-words mt-12 px-5 text-center sm:text-center'>
+              If you have any other question about our services and location we cannot deliver to you, head over to your local herald or contact us with this&nbsp;
+              <Link href="/contact">
+                <a className='text-secondary hover:underline hover:text-main transition-colors ease-in-out duration-300'>magic link</a>
+              </Link>
+              .
+            </p>
           </div>
         </section>
       </Layout>
