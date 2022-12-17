@@ -20,7 +20,10 @@ export default function handler(
         { url: `${baseUrl}contact`, priority: "0.7" },
         { url: `${baseUrl}blog`, priority: "0.7" },
         { url: `${baseUrl}blog/xeofood-what-is-it`, priority: "0.7" },
-        { url: `${baseUrl}blog/the-places-to-be-in-xeozrodel`, priority: "0.7" }
+        { url: `${baseUrl}blog/the-places-to-be-in-xeozrodel`, priority: "0.7" },
+        { url: `${baseUrl}blog/xeozrodel-camping`, priority: "0.7" },
+        { url: `${baseUrl}blog/xeozrodel-biggest-city`, priority: "0.7" },
+        { url: `${baseUrl}blog/best-xeozrodel-meals-to-try-out`, priority: "0.7" }
     ]
 
     const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
