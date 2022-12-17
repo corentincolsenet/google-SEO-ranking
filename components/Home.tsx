@@ -24,23 +24,15 @@ export default function Homepage() {
           {View}
         </a>
         <div className='flex flex-col justify-center w-screen h-screen bg-black/50 px-8 py-12 md:py-20 flex-wrap items-center'>
-          <div className='whitespace-pre-wrap max-w-xl'>
-            <h1 className='text-4xl text-center text-white font-bold md:leading-relaxed break-words pb-3'>Get thy <span className='text-secondary'>FOOD</span> from everywhere in <span className='text-secondary'><strong>XEOZRODEL</strong></span></h1>
-            <p className="text-center font-bold mx-0 mt-2 mb-0 leading-relaxed text-tertiary">
+          <div className='whitespace-pre-wrap max-w-xl xl:max-w-4xl'>
+            <h1 className='text-4xl xl:text-6xl text-center text-white font-bold md:leading-relaxed break-words pb-3'>Get thy <span className='text-secondary'>FOOD</span> from everywhere in <span className='text-secondary'><strong>XEOZRODEL</strong></span></h1>
+            <p className="text-center xl:text-2xl shadow-xl xl:pt-4 font-bold mx-0 mt-2 mb-0 leading-relaxed text-tertiary">
               Food from your favorite restaurants, delivered to your door.
               XeoFood is available across 95% of Xeozrodel ! We garuantee your delivery within 15 minutes.
             </p>
           </div>
         </div>
       </section>
-      {/* <section className="bg-fixed bg-center bg-cover" style={properties}>
-        <div className="flex flex-col w-full h-[550px] justify-center items-center bg-black/40">
-          <h2 className="text-white text-center text-3xl font-semibold mt-20 mb-10 mx-5">
-            Looking for some pandemain ?
-          </h2>
-          <p className='text-white text-center justify-center text-lg font-medium mx-5'>XeoFood is available across 95% of Xeozrodel ! We garuantee your delivery within 15 minutes.</p>
-        </div>
-      </section> */}
       <section id="explanations" className='space-y-8 py-20 px-8 max-w-6xl mx-auto'>
         <div className="container mx-auto px-4">
           <h2 className="text-3xl text-center font-semibold my-6 mb-10">We offer the best food delivery in all <span className='text-secondary'><strong>Xeozrodel</strong></span> !</h2>
